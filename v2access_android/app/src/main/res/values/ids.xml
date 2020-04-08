@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="scene_home" type="id" />
+    <item name="scene_accounts" type="id" />
+    <item name="scene_devices" type="id" />
+    <item name="scene_history" type="id" />
+    <item name="scene_faq" type="id" />
+    <item name="scene_settings" type="id" />
+    <item name="scene_user_setup" type="id" />
+
+    <item name="actor_main" type="id" />
+    <item name="actor_capture" type="id" />
+    <item name="actor_existing" type="id" />
+    <item name="actor_enroll" type="id" />
+    <item name="actor_verify" type="id" />
+    <item name="actor_calibrate" type="id" />
+
+    <item name="action_login" type="id" />
+    <item name="action_start_calibrating" type="id" />
+    <item name="action_stop_calibrating" type="id" />
+    <item name="action_screen_keep_on" type="id" />
+    <item name="action_screen_clear_on" type="id" />
+    <item name="action_step_tracker_on" type="id" />
+    <item name="action_step_tracker_off" type="id" />
+
+    <item name="settings_general_feedback" type="id" />
+    <item name="settings_debug_frame" type="id" />
+    <item name="settings_debug_voice_print_id" type="id" />
+    <item name="settings_debugging_display" type="id" />
+    <item name="settings_adaptive_microphone" type="id" />
+    <item name="settings_re_enroll" type="id" />
+    <item name="settings_calibrate" type="id" />
+    <item name="settings_calibration_reset" type="id" />
+    <item name="settings_capture_lead_in_speech" type="id" />
+    <item name="settings_capture_lead_in_speech_millis" type="id" />
+    <item name="settings_silence_threshold" type="id" />
+    <item name="settings_clear_accounts" type="id" />
+    <item name="settings_clear_devices" type="id" />
+    <item name="settings_clear_history" type="id" />
+    <item name="user_setup_capture_code_button" type="id" />
+
+    <item name="verify_screen_state_setup" type="id" />
+    <item name="verify_screen_state_ask_questions" type="id" />
+    <item name="verify_screen_state_resolve_voice" type="id" />
+    <item name="verify_screen_state_access_denied" type="id" />
+    <item name="verify_screen_state_access_denied_not_enough_speech" type="id" />
+    <item name="verify_screen_state_access_denied_complete" type="id" />
+    <item name="verify_screen_state_access_granted" type="id" />
+    <item name="verify_screen_state_access_denied_ask_feedback_questions" type="id" />
+    <item name="verify_screen_state_access_denied_ask_feedback_questions_complete" type="id" />
+    <item name="verify_screen_state_access_granted_ask_feedback_questions" type="id" />
+    <item name="verify_screen_state_error" type="id" />
+    <item name="verify_screen_state_error_ask_feedback_questions" type="id" />
+
+</resources>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="actor_home" type="id" />
+    <item name="actor_options" type="id" />
+    <item name="actor_details" type="id" />
+    <item name="actor_menu" type="id" />
+    <item name="actor_add" type="id" />
+    <item name="actor_edit" type="id" />
+    <item name="actor_delete" type="id" />
+    <item name="actor_header" type="id" />
+    <item name="actor_footer" type="id" />
+
+    <item name="action_item" type="id" />
+    <item name="action_add" type="id" />
+    <item name="action_save" type="id" />
+    <item name="action_edit" type="id" />
+    <item name="action_delete" type="id" />
+    <item name="action_commit" type="id" />
+    <item name="action_cancel" type="id" />
+    <item name="action_refresh" type="id" />
+    <item name="action_permission" type="id" />
+
+    <item name="model_view_none" type="id" />
+
+</resources>

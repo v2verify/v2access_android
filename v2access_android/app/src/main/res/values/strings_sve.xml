@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AWS Voxidem Developer Key -->
+    <string name="sve_dev_key" translatable="false"></string>
+
+    <!-- AWS Voxidem Application Key -->
+    <string name="sve_app_key" translatable="false"></string>
+
+    <string name="sve_server" translatable="false"></string>
+
+</resources>

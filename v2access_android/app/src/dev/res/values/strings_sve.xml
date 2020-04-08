@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AWS Developer Key -->
+    <string name="sve_dev_key">4129D2FA-EB7E-3815-1D39-6342265E9777</string>
+
+    <!-- AWS Voice Pass (Development) Development Application Key -->
+    <string name="sve_app_key">6D09D2B8-4BDC-WDFC-AF89-A6ED9F1C0FBB</string>
+
+    <!-- Local Connection String -->
+    <string name="sve_server">http://v2ondemand.com:50104</string>
+
+</resources>

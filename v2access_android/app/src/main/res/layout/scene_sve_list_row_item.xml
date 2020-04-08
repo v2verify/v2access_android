@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center">
+
+    <!--<ProgressBar-->
+    <!--android:id="@+id/scene_sve_progress"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:indeterminate="false"-->
+    <!--android:max="100"-->
+    <!--android:visibility="gone"-->
+    <!--android:progress="100" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/scene_sve_result"-->
+    <!--android:layout_width="30dp"-->
+    <!--android:layout_height="30dp"-->
+    <!--android:contentDescription="@string/scene_sve_result_content_description"-->
+    <!--android:visibility="gone"-->
+    <!--tools:src="@drawable/ic_speech_good" />-->
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:paddingEnd="0dp"
+        android:paddingStart="26dp"
+        android:text="@string/scene_sve_say"
+        android:id="@+id/say"
+        android:visibility="gone"
+        android:textColor="?attr/textColor"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/scene_sve_text"
+        style="@style/Base.TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:minWidth="130dp"
+        android:paddingEnd="0dp"
+        android:paddingStart="0dp"
+        android:textSize="30sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textColor="?attr/textColor"
+        tools:text="Phone Number" />
+
+</LinearLayout>

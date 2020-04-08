@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.validvoice.voxidem.MainActivity">
+
+
+
+
+    <!--<TextView-->
+    <!--android:id="@+id/devices_info"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="center"-->
+    <!--android:textColor="?attr/textColor"-->
+    <!--android:textStyle="bold"-->
+    <!--android:visibility="gone"-->
+    <!--android:text="@string/scene_home_device_info"/>-->
+
+
+
+    <com.validvoice.dynamic.scene.SceneSwipeRefreshLayout
+        android:id="@+id/swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ListView
+                tools:listitem="@layout/scene_home_list_row_intent"
+                android:id="@android:id/list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:divider="?attr/textColor"
+                android:dividerHeight="8dp"/>
+
+            <android.support.v7.widget.AppCompatImageView
+                android:layout_width="191dp"
+                android:layout_height="178dp"
+                android:layout_gravity="center"
+                android:id="@+id/upward_arrow"
+                android:src="@mipmap/pointing_arrow"
+                android:alpha="0.3"
+                android:tint="@color/arrowColor"/>
+
+
+            <TextView
+                android:id="@+id/devices_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_gravity="center"
+                android:textColor="?attr/textColor"
+                android:textStyle="bold"
+                android:text="@string/scene_home_device_info"/>
+
+
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                >
+
+                <ImageView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:id="@+id/logo_icon"
+                    android:scaleType="fitCenter"
+                    android:layout_marginTop="50dp"
+                    android:src="@drawable/logo_icon"
+                    android:alpha=".4"
+                    android:layout_gravity="center"
+                    />
+
+
+                <TextView
+                    android:id="@android:id/empty"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="50dp"
+                    android:textColor="?attr/textColor"
+                    android:text="@string/scene_home_swipe_to_refresh"/>
+
+                <android.support.v7.widget.AppCompatImageView
+                    android:layout_width="191dp"
+                    android:layout_height="178dp"
+                    android:layout_gravity="center"
+                    android:id="@+id/down_arrow"
+                    android:scaleY="-1"
+                    android:alpha="0.2"
+                    android:src="@mipmap/pointing_arrow"
+                    android:tint="@color/arrowColor"/>
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+    </com.validvoice.dynamic.scene.SceneSwipeRefreshLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_20"
+        android:orientation="vertical"
+        android:layout_gravity="bottom">
+
+        <android.support.v7.widget.AppCompatImageView
+            android:layout_width="191dp"
+            android:layout_height="178dp"
+            android:id="@+id/sideways_arrow"
+            android:layout_gravity="bottom|end"
+            android:tint="@color/arrowColor"
+            android:alpha="0.3" />
+
+
+
+        <Button
+            android:id="@+id/action_mobile_login"
+            style="@style/LoginButton"
+            android:text="@string/mobile_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:background="@color/buttonText"
+            android:textColor="@color/colorSecondary"
+            android:layout_gravity="bottom|center"
+            android:padding="22dp"
+            android:textAlignment="center"
+            />
+
+        <Button
+            android:id="@+id/action_capture_or_verify"
+            style="@style/LoginButton"
+            android:text="@string/scan_qr_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:padding="@dimen/margin_20"
+            android:background="@color/buttonText"
+            android:textColor="@color/colorSecondary"
+            android:layout_gravity="bottom|center"
+            android:textAlignment="center"
+            />
+
+<!--    <android.support.design.widget.FloatingActionButton-->
+<!--        android:id="@+id/action_capture_or_verify"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_gravity="center_vertical"-->
+<!--        android:layout_margin="@dimen/fab_margin"-->
+<!--        android:src="@drawable/ic_qr_code"-->
+<!--        android:clickable="true"-->
+<!--        app:borderWidth="0dp"-->
+<!--        android:backgroundTint="@color/colorSecondaryDark"-->
+<!--        app:fabSize="normal"/>-->
+
+    </LinearLayout>
+</FrameLayout>

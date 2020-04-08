@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="72dp">
+
+    <ImageView
+        tools:src="@mipmap/ic_launcher"
+        android:id="@+id/accounts_company_icon"
+        android:layout_height="48dp"
+        android:layout_width="48dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_gravity="start|center_vertical"
+        android:contentDescription="@string/scene_accounts_company_icon_description"
+        />
+
+    <LinearLayout
+        android:layout_height="match_parent"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp">
+
+        <TextView
+            tools:text="v2OnDemand"
+            android:id="@+id/accounts_company_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="?attr/textColor"
+            android:textStyle="bold"/>
+
+        <TextView
+            tools:text="tarsylas"
+            android:id="@+id/accounts_company_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="?attr/textColor"
+            android:textSize="16sp"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/accounts_company_logout_frame"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        >
+
+        <Button
+            style="@style/CardSectionRoundedButton"
+            android:id="@+id/accounts_company_logout"
+            android:layout_width="74dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center_vertical"
+            tools:text="@string/scene_accounts_logout" />
+
+    </FrameLayout>
+
+</LinearLayout>

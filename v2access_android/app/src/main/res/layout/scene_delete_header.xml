@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:layout_margin="10dp">
+
+        <TextView
+            style="@style/CardSectionHeader"
+            android:id="@+id/delete_label"
+            android:textColor="?attr/textColor"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/action_delete_label"/>
+
+        <View
+            style="@style/CardSectionDivider" />
+
+        <TextView
+            android:id="@+id/delete_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textColor="?attr/textColor"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/action_delete_message"
+            android:lines="2"/>
+
+    </LinearLayout>
+
+</LinearLayout>

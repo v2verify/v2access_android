@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.validvoice.voxidem">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <supports-screens android:smallScreens="true"
+
+        android:normalScreens="true"
+
+        android:largeScreens="true"
+
+        android:xlargeScreens="true"
+
+        android:anyDensity="true"
+
+        android:resizeable="true"/>
+
+    <application
+        android:name="com.validvoice.voxidem.VoxidemApplication"
+        android:allowBackup="true"
+        android:fullBackupContent="@xml/backup_scheme"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:authorities="com.v2verify.v2access"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+
+        <activity
+            android:name="com.validvoice.voxidem.VoxidemSplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.validvoice.voxidem.MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:configChanges="locale|orientation"/>
+
+        <provider
+            android:name="com.validvoice.voxidem.db.VoxidemProvider"
+            android:authorities="@string/content_provider"
+            android:exported="false"
+            android:syncable="false" />
+
+        <service
+            android:name="com.validvoice.dynamic.speech.service.SpeechService"
+            android:permission="android.permission.RECORD_AUDIO"
+            android:exported="false" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="SceneLayout">
+        <attr name="headerView" format="reference" />
+        <attr name="headerShadowedHeight" format="dimension" />
+        <attr name="headerShadowDrawable" format="reference" />
+        <attr name="footerView" format="reference" />
+        <attr name="footerShadowedHeight" format="dimension" />
+        <attr name="footerShadowDrawable" format="reference" />
+        <attr name="contentView" format="reference" />
+        <attr name="scrimColor" format="color|reference" />
+        <attr name="maxScrimOpacity" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ShadowedLayout">
+        <attr name="topShadowedView" format="reference" />
+        <attr name="topShadowedHeight" format="dimension" />
+        <attr name="leftShadowedView" format="reference" />
+        <attr name="leftShadowedHeight" format="dimension" />
+        <attr name="rightShadowedView" format="reference" />
+        <attr name="rightShadowedHeight" format="dimension" />
+        <attr name="bottomShadowedView" format="reference" />
+        <attr name="bottomShadowedHeight" format="dimension" />
+    </declare-styleable>
+
+</resources>

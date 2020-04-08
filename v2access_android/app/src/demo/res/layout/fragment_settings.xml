@@ -1,0 +1,495 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.validvoice.voxidem.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/settings_account"
+        android:orientation="vertical">
+        <!-- Account Settings -->
+
+        <TextView
+            style="@style/SettingsHeader"
+            android:text="@string/scene_settings_user_account_header"/>
+
+        <View style="@style/SettingsColorDivider" />
+
+        <TextView
+            tools:text="tarsylas@gmail.com"
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_user_account_name"
+            />
+
+        <Button
+            style="@style/SettingsButton"
+            android:id="@+id/settings_user_logout"
+            android:text="@string/scene_settings_user_logout"/>
+
+        <!-- General Settings -->
+
+        <TextView
+            style="@style/SettingsHeader"
+            android:text="@string/scene_settings_general_header"/>
+
+        <View style="@style/SettingsColorDivider" />
+
+        <CheckBox
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_general_animations"
+            android:text="@string/scene_settings_general_animations"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+        <CheckBox
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_general_feedback"
+            android:text="@string/scene_settings_general_feedback"
+            android:button="@null"
+            android:visibility="gone"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+        <CheckBox
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_general_noise_cancellation"
+            android:text="@string/scene_settings_general_noise_cancellation"
+            android:button="@null"
+            android:visibility="gone"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+        <CheckBox
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_general_question_tone"
+            android:text="@string/scene_settings_general_question_tone"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+        <CheckBox
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_general_speech_to_text"
+            android:text="@string/scene_settings_general_speech_to_text"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+        <CheckBox
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_general_dark_mode"
+            android:text="@string/scene_settings_general_dark_mode"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+
+        <CheckBox
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_general_sensitivity_option"
+            android:text="@string/scene_settings_general_sensitivity_option"
+            android:button="@null"
+            android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+        <TextView
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_logoff_sensitivity_threshold"
+            android:text="@string/scene_settings_logoff_sensitivity"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <SeekBar
+            android:id="@+id/settings_logoff_sensitivity_bar"
+            style="@style/SettingsContentItem"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"
+            android:max="2"
+            android:progress="1" />
+
+        <TextView
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_silence_threshold"
+            android:text="@string/scene_settings_debugging_silence_threshold"
+            android:visibility="gone"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/settings_calibrate"
+            style="@style/SettingsButton"
+            android:visibility="gone"
+            android:text="@string/scene_settings_calibrate"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/settings_calibration_reset"
+            style="@style/SettingsButton"
+            android:text="@string/scene_settings_calibration_reset"
+            android:layout_marginBottom="8dp"
+            android:visibility="gone"/>
+
+        <!-- Debug Settings -->
+
+        <LinearLayout
+            android:id="@+id/settings_debug_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                style="@style/SettingsHeader"
+                android:text="@string/scene_settings_debugging_header"/>
+
+            <View style="@style/SettingsColorDivider"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/settings_re_enroll"
+                style="@style/SettingsButton"
+                android:text="@string/scene_settings_debugging_re_enroll" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/settings_card_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            >
+
+            <TextView
+                style="@style/SettingsHeader"
+                android:text="@string/scene_settings_debugging_card_header"/>
+
+            <View style="@style/SettingsColorDivider"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/settings_card"
+                style="@style/SettingsButton"
+                android:text="@string/scene_settings_debugging_card" />
+
+        </LinearLayout>
+
+        <!-- Select Language -->
+
+        <LinearLayout
+            android:id="@+id/settings_select_language"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <Button
+                android:id="@+id/settings_language_select"
+                style="@style/HomePageButton"
+                android:text="@string/scene_settings_debugging_select_language" />
+
+            <Button
+                android:id="@+id/settings_companyId_select"
+                style="@style/HomePageButton"
+                android:layout_margin="@dimen/margin_20"
+                android:text="@string/scene_settings_debugging_select_companyId" />
+
+        </LinearLayout>
+
+        <!-- Version Settings -->
+
+        <TextView
+            style="@style/SettingsHeader"
+            android:text="@string/scene_settings_version_header"/>
+
+        <View style="@style/SettingsColorDivider" />
+
+        <TextView
+            tools:text="1.0.12"
+            style="@style/SettingsContentItem"
+            android:id="@+id/settings_application_version"
+            />
+
+        <!-- Privacy Policy Settings -->
+
+        <TextView
+            style="@style/SettingsHeader"
+            android:text="@string/scene_settings_policies_header"/>
+
+        <View style="@style/SettingsColorDivider"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            style="@style/SettingsButton"
+            android:id="@+id/settings_application_privacy_policy"
+            android:text="@string/scene_settings_privacy_policy" />
+    </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/comp_info"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:visibility="gone"
+            android:orientation="vertical">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    >
+
+
+                    <ImageView
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:id="@+id/logo_icon"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="50dp"
+                        android:src="@drawable/logo_icon"
+                        android:layout_weight="1"
+                        android:layout_gravity="center"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/scene_company_info"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textSize="25sp"
+                        android:breakStrategy="simple"
+                        android:layout_margin="@dimen/margin_20"></TextView>
+
+
+
+
+
+                    <android.support.design.widget.TextInputLayout
+                        android:id="@+id/scene_user_company_id_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/margin_20"
+                        android:background="@drawable/cancel_button_background"
+                        android:hint="@string/scene_company_info_hint"
+                        android:padding="8dp"
+                        android:textColorHint="@color/buttonBorder">
+
+                        <android.support.design.widget.TextInputEditText
+                            android:id="@+id/scene_user_company_id"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/transparent_background"
+                            android:hint="@string/scene_company_info_hint"
+                            android:textColorHint="@color/buttonBorder" />
+
+                    </android.support.design.widget.TextInputLayout>
+
+
+                </LinearLayout>
+
+            <Button
+                android:id="@+id/company_info_submit"
+                style="@style/LoginButton"
+                android:layout_marginLeft="@dimen/margin_40"
+                android:layout_marginRight="@dimen/margin_40"
+                android:layout_marginBottom="8dp"
+                android:text="@string/scene_user_new_submit" />
+
+
+        </LinearLayout>
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/CardSectionHeader"
+                android:text="@string/scene_settings_user_account_header"/>
+
+            <View style="@style/CardSectionDivider" />
+
+            <TextView
+                tools:text="tarsylas@gmail.com"
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_user_account_name"
+                />
+
+            <Button
+                android:id="@+id/settings_user_logout"
+                style="@style/CardSectionRoundedButton"
+                android:text="@string/scene_settings_user_logout" />
+
+        </LinearLayout>
+        -->
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/CardSectionHeader"
+                android:text="@string/scene_settings_general_header"/>
+
+            <View style="@style/CardSectionDivider" />
+
+            <CheckBox
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_general_animations"
+                android:text="@string/scene_settings_general_animations"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+            <CheckBox
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_general_feedback"
+                android:text="@string/scene_settings_general_feedback"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+            <CheckBox
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_general_noise_cancellation"
+                android:text="@string/scene_settings_general_noise_cancellation"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+            <TextView
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_silence_threshold"
+                android:text="@string/scene_settings_debugging_silence_threshold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_logoff_sensitivity_threshold"
+                android:text="@string/scene_settings_logoff_sensitivity"
+                android:layout_marginBottom="8dp"/>
+
+            <SeekBar
+                android:id="@+id/settings_logoff_sensitivity_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:max="2"
+                android:progress="1"/>
+
+            <Button
+                android:id="@+id/settings_calibrate"
+                style="@style/CardSectionRoundedButton"
+                android:text="@string/scene_settings_calibrate"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/settings_calibration_reset"
+                style="@style/CardSectionRoundedButton"
+                android:text="@string/scene_settings_calibration_reset"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+        -->
+
+        <!--
+        <LinearLayout
+            android:id="@+id/settings_debug_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/CardSectionHeader"
+                android:text="@string/scene_settings_debugging_header"/>
+
+            <View
+                style="@style/CardSectionDivider"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                android:id="@+id/settings_re_enroll"
+                style="@style/CardSectionRoundedButton"
+                android:text="@string/scene_settings_debugging_re_enroll" />
+
+        </LinearLayout>
+        -->
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/CardSectionHeader"
+                android:text="@string/scene_settings_version_header" />
+
+            <View style="@style/CardSectionDivider" />
+
+            <TextView
+                tools:text="1.0.12"
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_application_version"
+                />
+
+        </LinearLayout>
+        -->
+
+        <!--
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                style="@style/CardSectionHeader"
+                android:text="@string/scene_settings_policies_header" />
+
+            <View
+                style="@style/CardSectionDivider"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                style="@style/CardSectionRoundedButton"
+                android:id="@+id/settings_application_privacy_policy"
+                android:text="@string/scene_settings_privacy_policy" />
+
+        </LinearLayout>
+        -->
+
+    </LinearLayout>
+
+</ScrollView>

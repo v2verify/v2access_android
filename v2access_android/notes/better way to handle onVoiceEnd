@@ -1,0 +1,174 @@
+mVerifier.Post(buffer, new SveVerifier.PostCallback() {
+    @Override
+    public void onPostComplete(SveVerifier.Result result) {
+        Log.d(TAG, "Verify Result(" + mState.name() + ") onPostComplete: " + result.toString());
+        switch(mState) {
+            case GatherQuestion:
+                CallVerifyUpdate(result);
+                if(!ShowNextVerifyQuestion()) {
+
+                }
+                break;
+            case GatherFreeForm:
+                boolean hasEnough = UpdateGatherFreeFormPercent();
+                if (result == SveVerifier.Result.NeedMore ||
+                        result == SveVerifier.Result.Ambiguous ||
+                        (!hasEnough && result == SveVerifier.Result.Fail)) {
+                    if (!ShowNextQuestion()) {
+                        CallVerifyCancel("Not Enough Speech");
+                        ShowAgain("Not Enough Speech");
+                    }
+                } else if (mVerifier.IsVerified()) {
+                    if(mQuestions.hasSecurityQuestions()) {
+                        if(mLiveStatus == LiveStatus.None) {
+                            ShowNextSecurityQuestion();
+                        } else if (!mInSpeechListener) {
+                            CallBusyWaitOnLiveness();
+                            if(mLiveStatus == LiveStatus.Alive) {
+                                CallVerifyEnd();
+                                ShowAgain("Authorized - Alive");
+                            } else {
+                                CallVerifyEnd();
+                                ShowAgain("Unauthorized - Not Alive");
+                            }
+                        }
+                    } else {
+                        CallVerifyEnd();
+                        ShowAgain("Authorized");
+                    }
+                } else if (mVerifier.HasResult()) {
+                    CallVerifyEnd();
+                    ShowAgain("Unauthorized");
+                } else {
+                    CallVerifyCancel(mVerifier.GetVerifyResult().name());
+                    ShowAgain(mVerifier.GetVerifyResult().name());
+                }
+                break;
+            case GatherChallengeUnverified:
+                if(mVerifier.IsVerified()) {
+                    SetState(State.GatherChallengeRecognizing);
+                    mLiveStatus = LiveStatus.Pending;
+                    mSpeechStreamRecognizer.recognize(buffer, buffer.length);
+                } else if(mVerifier.GetVerifyResult() == SveVerifier.Result.NeedMore) {
+                    CallVerifyUpdate(result);
+                    if(!ShowNextVerifyQuestion()) {
+                        CallVerifyEnd();
+                        CallVerifyUpdateFinal(SveVerifier.Result.Ambiguous);
+                        ShowAgain("Not Enough Speech");
+                    }
+                } else {
+                    CallVerifyEnd();
+                    CallVerifyUpdateFinal(SveVerifier.Result.Fail);
+                    ShowAgain("Not Authorized");
+                }
+                break;
+            case GatherChallengeVerified:
+                if (!mInSpeechListener) {
+                    CallBusyWaitOnLiveness();
+                    boolean isVerified = mVerifier.IsVerified();
+                    CallVerifyEnd();
+                    if (!isVerified || mLiveStatus != LiveStatus.Alive) {
+                        CallVerifyUpdateFinal(SveVerifier.Result.Fail);
+                        ShowAgain("Not Authorized - Not Alive");
+                    } else {
+                        CallVerifyUpdateFinal(SveVerifier.Result.Pass);
+                        ShowAgain("Authorized - Alive");
+                    }
+                }
+                break;
+        }
+    }
+
+    @Override
+    public void onFailure(Exception ex) {
+        Log.d(TAG, "Verify Result(GatherQuestion) onFailure: " + ex.getLocalizedMessage());
+        ex.printStackTrace();
+        CallVerifyUpdateFinal(SveVerifier.Result.Fail);
+        ShowGatherFailure(R.string.scene_verify_instructions_server_failure, ex.getLocalizedMessage());
+        CallVerifyCancel(ex.getLocalizedMessage());
+    }
+});
+
+
+
+
+
+
+
+
+
+
+
+
+public boolean nextQuestion(SveVerifier verifier) {
+    boolean hasEnough = verifier.GetSpeechProgress() == 100;
+    SveVerifier.Result result = verifier.GetVerifyResult();
+    if (result == SveVerifier.Result.NeedMore ||
+            result == SveVerifier.Result.Ambiguous ||
+            (!hasEnough && result == SveVerifier.Result.Fail)) {
+        return nextQuestion();
+    } else if(verifier.IsVerified()) {
+        if(hasSecurityQuestions()) {
+            if(verifier.GetAliveState() == SveVerfier.LiveState.None) {
+                return ShowNextSecurityQuestion();
+            }
+        }
+        return false;
+    } else if(verifier.HasResult()) {
+        return false;
+    } else {
+        return false;
+    }
+}
+
+private boolean ShowNextQuestion() {
+        if (mIsVerifyCanceled) {
+            return true;
+        } else if(mQuestions.nextQuestion(mVerifier)) {
+            final Questions.IQuestion q = mQuestions.getQuestion();
+            mVoiceRecorder.setMaxSpeechLengthMillis(q.maxSpeechLengthMillis());
+            mVoiceRecorder.setSpeechTimeoutMillis(q.speechTimeoutMillis());
+            mVoiceRecorder.resume();
+            switch(q.questionType()) {
+                case Question:
+                    
+                    break;
+                case FreeSpeech:
+                    SetState(State.GatherQuestion);
+                    mUiHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            scene_verify_button.setVisibility(View.GONE);
+                            scene_verify_authorization.setVisibility(View.GONE);
+                            scene_verify_instructions.setText(q.getQuestion());
+                            scene_verify_instructions.setVisibility(View.VISIBLE);
+                            scene_verify_freeform_progress.setVisibility(View.VISIBLE);
+                            scene_verify_group.setVisibility(View.GONE);
+                        }
+                    });
+                    break;
+                case Challenge:
+                    mChosenNumbers = q.getQuestion();
+                    final VerifyData verifyData = new VerifyData(mChosenNumbers);
+                    SetState(mVerifier.IsVerified() ? State.GatherChallengeVerified : State.GatherChallengeUnverified);
+                    mUiHandler.post(new Runnable() {
+                        @Override
+                        public void run() {
+                            scene_verify_button.setVisibility(View.GONE);
+                            scene_verify_authorization.setVisibility(View.GONE);
+                            scene_verify_instructions.setVisibility(View.GONE);
+                            scene_verify_freeform_progress.setVisibility(View.GONE);
+                            scene_verify_group.setVisibility(View.VISIBLE);
+                            mVerifyViewGroupAdapter.add(verifyData);
+                        }
+                    });
+                    break;
+                case Question:
+                    throw new IllegalArgumentException("Only FreeSpeech && Challenge types allowed");
+            }
+            return true;
+        } else {
+            // evalutate proper gatherState
+        }
+        return false;
+    }

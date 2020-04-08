@@ -1,0 +1,901 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AndroidLayouts">
+    <shared>
+      <config />
+    </shared>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="67d41a44-7a57-472d-9f32-db277c615309" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/gradle_models.ser" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/demo/res/layout/fragment_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/demo/res/layout/fragment_user_setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/demo/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/demo/res/values/strings_sve.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/demo_test/res/layout/fragment_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/demo_test/res/layout/fragment_user_setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/demo_test/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/demo_test/res/values/strings_sve.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/dev/res/layout/fragment_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/dev/res/layout/fragment_user_setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/dev/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/dev/res/values/strings_sve.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/ios_demo/res/layout/fragment_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/ios_demo/res/layout/fragment_user_setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/ios_demo/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/ios_demo/res/values/strings_sve.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/local/res/layout/fragment_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/local/res/layout/fragment_user_setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/local/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/local/res/values/strings_sve.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_launcher-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_menu_devices-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_menu_faq-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_menu_home-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_menu_log-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/ic_menu_settings-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/MainActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/VoxidemApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/VoxidemPreferences.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/VoxidemSplashActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/barcode/BarcodeTracker.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/barcode/BarcodeTrackerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/camera/CameraSource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/camera/CameraSourcePreview.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/cloud/ControlKeys.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/cloud/QrIntent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/cloud/QrUserAccount.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/cloud/UserAccountDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/cloud/UserDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/cloud/UserDeviceDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/cloud/UserError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/cloud/UserIntent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/cloud/UserLogin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/db/VoxidemDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/db/VoxidemProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/db/contracts/AccountsContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/db/contracts/DevicesContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/db/contracts/HistoryContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/db/models/AccountModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/db/models/DeviceModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/db/models/HistoryModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/accounts/AccountDetailsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/accounts/AccountsCursorAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/accounts/AccountsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/accounts/AccountsSceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/devices/DeviceDetailsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/devices/DevicesCursorAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/devices/DevicesFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/devices/DevicesSceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/faq/FaqFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/faq/FaqSceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/history/HistoryCursorAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/history/HistoryDetailsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/history/HistoryFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/history/HistorySceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/home/HomeFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/home/HomeSceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/home/IntentArrayAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/settings/SettingsCalibrateFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/settings/SettingsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/settings/SettingsSceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/capture/AccountArrayAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/capture/AccountSelectionDialogFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/capture/CaptureFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/EnrollData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/EnrollFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/EnrollViewGroupAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/QuestionSet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/QuestionSetList.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/VerifyData.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/VerifyFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/VerifyIntent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/VerifyModelViewFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/subs/sve/VerifyViewGroupAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/user_setup/UserDetailsFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/user_setup/UserSetupFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/user_setup/UserSetupSceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/utils/Coordinator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/utils/SensorFusionMath.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/utils/SimplePedometer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/utils/SimpleStepDetector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/utils/StepListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/pointing_arrow-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/pointing_arrow_sideways-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/bounce.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/custom_check_animation.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/pulse.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/anim/spin_clockwise.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/animator/bounce.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/color/bottom_nav_color.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_speech_bad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_speech_good.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-hdpi/ic_speech_unsure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_speech_bad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_speech_good.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-mdpi/ic_speech_unsure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v21/card_section_flared_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v21/card_section_noticed_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v21/card_section_rounded_button.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/done.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_speech_bad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_speech_good.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/ic_speech_unsure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/logo_icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/logo_icon_smallest.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xhdpi/powered_by_validvoice.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/bg_card.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_speech_bad.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_speech_good.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-xxhdpi/ic_speech_unsure.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/analyze_gradient.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/analyze_gradient_first.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/analyze_gradient_second.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/analyze_gradient_third.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/animated_check.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/background_splash.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/button_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/cancel_button_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/clear_voice.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/custom_check_mark.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/failure_gradient.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/hold_close.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/home_button_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/home_page_gradient.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_action_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_action_refresh.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_action_refresh_test.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_clock_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_greencircle_off.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_login.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_logout_out.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_accounts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_history.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_microphone.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_microphone_green.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_qr_code.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_securedbyvoice.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_speech_bad.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_speech_good.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_speech_unsure.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_success.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_v2factor.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_v2ondemand.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_warning.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_webmail.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_world.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/left_rounded_corner_drawable.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/normal_speech.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/progress_bar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/right_rounded_corner_drawable.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/speak.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/speak_louder.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/success_gradient.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/transparent_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/wait.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/montserrat_bold.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/font/montserrat_regular.otf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/card_info_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_account_details.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_accounts.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_capture.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_device_details.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_enroll.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_faq.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_history_details.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_new_verify.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_settings_calibrate.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_details.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_user_setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_verify.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_accounts_list_row_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_delete_header.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_devices_edit_header.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_devices_footer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_devices_list_row_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_history_list_row_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_home_device_add.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_home_list_row_intent.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_sve_list_row_item.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/scene_user_existing_header.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/training_token_layout.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/devices.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/home.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/user_setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_action_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_foreground.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_menu_devices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_menu_faq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_menu_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_menu_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_menu_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/pointing_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/pointing_arrow_sideways.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_action_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_menu_devices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_menu_faq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_menu_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_menu_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_menu_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/login_logo_larger.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/pointing_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/pointing_arrow_sideways.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_action_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_menu_devices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_menu_faq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_menu_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_menu_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_menu_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/pointing_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/pointing_arrow_sideways.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_action_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_menu_devices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_menu_faq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_menu_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_menu_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_menu_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/pointing_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/pointing_arrow_sideways.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/vv_voxidem_spiral.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/vv_voxidem_spiral_large.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/vv_voxidem_words.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_action_add.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_menu_devices.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_menu_faq.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_menu_home.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_menu_log.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_menu_settings.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/pointing_arrow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/pointing_arrow_sideways.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/beep.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/short_chime.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v21/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-v21/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-vi/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-w820dp/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/drawables.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/ic_launcher_background.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/ids.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings_languages.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings_sve.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/xml/backup_scheme.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/v2Logo-web.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/tradeshow/res/layout/fragment_settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/tradeshow/res/layout/fragment_user_setup.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/tradeshow/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/tradeshow/res/values/strings_sve.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tradeshow/release/app-tradeshow-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/tradeshow/release/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/constraint/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/android/support/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/com/google/android/gms/group-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/maven.google/master-index.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/intermediates/lint-cache/sdk-registry.xml/sdk-registry.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/release/app-demo-release.apk" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/release/output.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/dynamic.cloud.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/BaseCloudController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/CloudArray.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/CloudArrayAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/CloudController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/CloudError.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/CloudImageLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/CloudJsonObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/CloudMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/CloudResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/ICloudController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/ICloudImageLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/ICloudMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/ICloudObject.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/protocols/rest/PicassoCloudImageLoader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/protocols/rest/RestCloudController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.cloud/src/main/java/com/validvoice/dynamic/cloud/protocols/rest/RestCloudMessage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/dynamic.db.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/java/com/validvoice/dynamic/db/BaseContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/java/com/validvoice/dynamic/db/BaseDatabase.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/java/com/validvoice/dynamic/db/BaseProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/java/com/validvoice/dynamic/db/ContractController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/java/com/validvoice/dynamic/db/IContractModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/java/com/validvoice/dynamic/db/IDatabaseContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/java/com/validvoice/dynamic/db/IProviderContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/java/com/validvoice/dynamic/db/SelectionBuilder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.db/src/main/java/com/validvoice/dynamic/db/contracts/NotifyContract.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/dynamic.scene.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/IRetainedSceneFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/ISceneActionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/ISceneControllerFactory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/ISceneFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/ISceneModelView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/IScenePermissionListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/RetainedSceneFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneActivity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneCursorAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneDialogFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneDirector.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneModelViewFragment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneStatusLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/SceneSwipeRefreshLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/ShadowedLayout.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/TSceneListAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/TSceneViewGroupAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/listeners/OnItemWasSelectedListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/listeners/OnWasCheckedChangeListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/listeners/OnWasClickedListener.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/widgets/KeyboardEditText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/java/com/validvoice/dynamic/scene/widgets/TextInputKeyboardEditText.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/anim/slide_in_bottom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/anim/slide_in_left.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/anim/slide_in_right.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/anim/slide_in_top.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/anim/slide_out_bottom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/anim/slide_out_left.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/anim/slide_out_right.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/anim/slide_out_top.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/drawable/bottom_shadow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/drawable/left_shadow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/drawable/right_shadow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/drawable/top_shadow.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_cancel_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_commit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_delete_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_edit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_holo_dark_import_export.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_new_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_overflow_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_refresh_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_save_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_send_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_action_settings_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_microphone_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-hdpi/ic_microphone_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_cancel_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_commit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_delete_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_edit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_holo_dark_import_export.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_new_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_overflow_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_refresh_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_save_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_send_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_action_settings_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_microphone_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-mdpi/ic_microphone_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_cancel_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_commit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_delete_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_edit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_holo_dark_import_export.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_new_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_overflow_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_save_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_send_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_action_settings_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_microphone_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xhdpi/ic_microphone_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_cancel_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_commit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_delete_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_edit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_holo_dark_import_export.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_new_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_overflow_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_refresh_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_save_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_send_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_action_settings_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_microphone_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxhdpi/ic_microphone_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_cancel_white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_commit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_delete_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_edit_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_holo_dark_import_export.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_new_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_overflow_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_refresh_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_save_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_send_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_action_settings_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_microphone_dark.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/mipmap-xxxhdpi/ic_microphone_light.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/values/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/values/ids.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.scene/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/dynamic.speech.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/audio/AudioBuffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/audio/AudioCodec.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/audio/AudioPlayer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/audio/AudioRecorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/audio/AudioRecorderCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/audio/wave/WaveReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/audio/wave/WaveWriter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/audio/wave/exception/InvalidWaveException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/SpeechApi.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/SpeechContent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/SveEnroller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/SveFeedback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/SveIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/SveVerifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/SveWebAgent.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/contexts/SpeechContext.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/contexts/SpeechContexts.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/enrollers/ISveEnroller.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/enrollers/SveEnroller_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/enrollers/SveEnroller_Binary_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/feedback/ISveFeedback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/feedback/SveFeedback_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/http/SveHttpBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/http/SveHttpRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/http/SveHttpResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/http/body/SveAudioWavHttpBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/http/body/SveJsonHttpBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/http/body/SveNullHttpBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/http/body/SveOkRequestHttpBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/http/body/SvePropertiesHttpBody.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/identifiers/ISveIdentifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/identifiers/SveIdentifier_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/tcmp/SveProtocol.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/utils/SveFailureCallback.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/utils/SveUtility.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/verifiers/ISveVerifier.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/verifiers/SveVerifier_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/authorization/lib/verifiers/SveVerifier_Binary_1.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/recognition/SpeechAudio.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/recognition/SpeechConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/recognition/SpeechRecognition.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/recognition/SpeechResult.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/service/AdaptiveSpeechServiceConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/service/CalibrateSpeechServiceConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/service/SpeechService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/service/SpeechServiceConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/speech/service/VerifyServiceConnection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/utils/CircularByteBuffer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/utils/RollingAudioFrameAccumulator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/voice/AudioFrame.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dynamic.speech/src/main/java/com/validvoice/dynamic/voice/VoiceRecorder.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/local.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/better way to handle onVoiceEnd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/colors" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/db notes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/device identification" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/guest mode" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/lead in" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/session screen" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/todo" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/touchpoint_db.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes/voxidem api" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/proguard-rules.pro" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/AndroidManifest.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/java/com/steelkiwi/library/ui/SeparateShapesView.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/java/com/steelkiwi/library/ui/animation/ShapeAnimator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/java/com/steelkiwi/library/ui/drawable/SeparateShapeDrawable.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/java/com/steelkiwi/library/ui/util/Constants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/java/com/steelkiwi/library/ui/util/ViewStatus.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/res/values/attrs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/res/values/colors.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/res/values/dimens.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/src/main/res/values/strings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/steelkiwi.library/steelkiwi.library.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2_apps_v2mobile_android.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/v2access_android.iml" beforeDir="false" afterPath="$PROJECT_DIR$/v2access_android.iml" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DefaultGradleProjectSettings">
+    <option name="isMigrated" value="true" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_28" />
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings_sve.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/demo/res/values/strings_sve.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/VoxidemPreferences.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-714">
+              <caret line="88" column="68" selection-start-line="88" selection-start-column="68" selection-end-line="88" selection-end-column="68" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/build.gradle">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>developmentke</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/app/src/main/res/values/strings_sve.xml" />
+        <option value="$PROJECT_DIR$/app/src/demo/res/values/strings_sve.xml" />
+        <option value="$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/VoxidemPreferences.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="y" value="23" />
+    <option name="width" value="1440" />
+    <option name="height" value="822" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView">
+        <subPane>
+          <expand>
+            <path>
+              <item name="v2access_android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+            </path>
+            <path>
+              <item name="v2access_android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+            </path>
+            <path>
+              <item name="v2access_android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+            </path>
+            <path>
+              <item name="v2access_android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="strings_sve" type="c431d0b8:AndroidResGroupNode" />
+            </path>
+            <path>
+              <item name="v2access_android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="app" type="feadf853:AndroidModuleNode" />
+              <item name="res" type="d4f16f75:AndroidResFolderNode" />
+              <item name="values" type="ddeffd01:AndroidResFolderTypeNode" />
+              <item name="styles" type="c431d0b8:AndroidResGroupNode" />
+            </path>
+            <path>
+              <item name="v2access_android" type="1abcf292:AndroidViewProjectNode" />
+              <item name="Gradle Scripts" type="ae0cef3a:AndroidBuildScriptsGroupNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="android.project.structure.last.selected" value="SDK Location" />
+    <property name="android.project.structure.proportion" value="0.15" />
+    <property name="android.sdk.path" value="$USER_HOME$/Library/Android/sdk" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.other" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
+      <option name="TEST_OBJECT" value="class" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+      <module name="app" />
+      <option name="DEPLOY" value="true" />
+      <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+      <option name="DEPLOY_AS_INSTANT" value="false" />
+      <option name="ARTIFACT_NAME" value="" />
+      <option name="PM_INSTALL_OPTIONS" value="" />
+      <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+      <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+      <option name="MODE" value="default_activity" />
+      <option name="CLEAR_LOGCAT" value="false" />
+      <option name="SHOW_LOGCAT_AUTOMATICALLY" value="false" />
+      <option name="SKIP_NOOP_APK_INSTALLATIONS" value="true" />
+      <option name="FORCE_STOP_RUNNING_APP" value="true" />
+      <option name="TARGET_SELECTION_MODE" value="DEVICE_AND_SNAPSHOT_COMBO_BOX" />
+      <option name="USE_LAST_SELECTED_DEVICE" value="false" />
+      <option name="PREFERRED_AVD" value="" />
+      <option name="SELECTED_CLOUD_MATRIX_CONFIGURATION_ID" value="-1" />
+      <option name="SELECTED_CLOUD_MATRIX_PROJECT_ID" value="" />
+      <option name="DEBUGGER_TYPE" value="Auto" />
+      <Auto>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Auto>
+      <Hybrid>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Hybrid>
+      <Java />
+      <Native>
+        <option name="USE_JAVA_AWARE_DEBUGGER" value="false" />
+        <option name="SHOW_STATIC_VARS" value="true" />
+        <option name="WORKING_DIR" value="" />
+        <option name="TARGET_LOGGING_CHANNELS" value="lldb process:gdb-remote packets" />
+        <option name="SHOW_OPTIMIZED_WARNING" value="true" />
+      </Native>
+      <Profilers>
+        <option name="ADVANCED_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+        <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
+      </Profilers>
+      <option name="DEEP_LINK" value="" />
+      <option name="ACTIVITY_CLASS" value="" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="67d41a44-7a57-472d-9f32-db277c615309" name="Default Changelist" comment="" />
+      <created>1586318110864</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1586318110864</updated>
+    </task>
+    <task id="LOCAL-00001" summary="Initial Commit">
+      <created>1586318858813</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586318858813</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="23" width="1440" height="822" extended-state="0" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Captures" order="0" side_tool="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.33404863" />
+      <window_info id="Structure" order="2" side_tool="true" />
+      <window_info id="Favorites" order="3" side_tool="true" />
+      <window_info id="Build Variants" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Designer" order="6" />
+      <window_info id="Resources Explorer" order="7" />
+      <window_info id="Capture Tool" order="8" />
+      <window_info anchor="bottom" id="Version Control" order="0" weight="0.32876712" />
+      <window_info anchor="bottom" id="Logcat" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" />
+      <window_info anchor="bottom" id="Find" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="4" />
+      <window_info anchor="bottom" id="Event Log" order="5" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="6" visible="true" weight="0.32876712" />
+      <window_info anchor="bottom" id="Android Profiler" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Device File Explorer" order="0" side_tool="true" />
+      <window_info anchor="right" id="Capture Analysis" order="1" />
+      <window_info anchor="right" id="Gradle" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info anchor="right" id="Palette&#9;" order="4" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Initial Commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="Initial Commit" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/scenes/settings/SettingsFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="772">
+          <caret line="173" column="101" selection-start-line="173" selection-start-column="101" selection-end-line="173" selection-end-column="101" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/values/strings_sve.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/demo/res/values/strings_sve.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/com/validvoice/voxidem/VoxidemPreferences.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-714">
+          <caret line="88" column="68" selection-start-line="88" selection-start-column="68" selection-end-line="88" selection-end-column="68" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build.gradle">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+  </component>
+</project>

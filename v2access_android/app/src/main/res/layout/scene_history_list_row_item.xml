@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingBottom="8dp">
+    
+    <TextView
+        tools:text="07/15/2016 - 01:30:00 PM"
+        style="@style/FloatingContentSubHeading"
+        android:id="@+id/history_datetime_text"
+        android:layout_width="match_parent"
+        android:textColor="?attr/textColor"
+        android:layout_height="wrap_content">
+    </TextView>
+
+    <View
+        style="@style/FloatingHorizontalDivider"
+        android:background="@color/colorAccent"
+        />
+
+    <TextView
+        style="@style/FloatingContentDetail"
+        android:id="@+id/history_type"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/textColor"
+        android:visibility="gone"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/FloatingContentSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="?attr/textColor"
+                android:text="@string/scene_history_user"/>
+            <TextView
+                style="@style/FloatingContentValue"
+                tools:text="value"
+                android:id="@+id/history_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/FloatingContentSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/scene_history_device"/>
+
+            <TextView
+                style="@style/FloatingContentValue"
+                tools:text="value"
+                android:id="@+id/history_device"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textColor"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/FloatingContentSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/scene_history_site"/>
+
+            <TextView
+                style="@style/FloatingContentValue"
+                tools:text="value"
+                android:id="@+id/history_site"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="?attr/textColor"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/FloatingContentSubTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:text="@string/scene_history_result"/>
+
+            <TextView
+                style="@style/FloatingContentValue"
+                tools:text="value"
+                android:id="@+id/history_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

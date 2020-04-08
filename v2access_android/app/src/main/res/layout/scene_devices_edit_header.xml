@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/gradientColor">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/bg_card"
+        android:layout_margin="10dp">
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/scene_devices_edit_nickname_layout"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:hint="@string/scene_devices_edit_nickname_hint"
+            android:gravity="center_vertical"
+            >
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/scene_devices_edit_nickname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/scene_devices_edit_nickname_hint"
+                android:inputType="textPersonName"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

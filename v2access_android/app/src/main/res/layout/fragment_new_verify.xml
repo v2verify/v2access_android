@@ -1,0 +1,318 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.validvoice.voxidem.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true">
+
+    <!-- Upper Banner -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/scene_verify_segment"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/scene_verify_vv_logo"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="false"
+            android:contentDescription="@string/scene_verify_content_description"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/ic_microphone_green" />
+
+        <TextView
+            android:id="@+id/scene_verify_vv_header"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/scene_verify_verify_by_voice"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="?attr/textColor" />
+
+        <!-- Verify Elements -->
+
+        <TextView
+            android:id="@+id/scene_verify_listening"
+            style="@style/Base.TextAppearance.AppCompat.Medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="5dp"
+            android:text="@string/scene_verify_listening"
+            android:textColor="?attr/textColor"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/scene_verify_group"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:layout_gravity="center"
+            android:animateLayoutChanges="true"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        </LinearLayout>
+
+        <!-- Progress Elements -->
+
+        <TextView
+            android:id="@+id/scene_verify_resolver_description"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:lines="3"
+            android:layout_gravity="center"
+            android:text="@string/scene_verify_resolver_description"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="?attr/textColor"
+            android:textStyle="italic"
+            android:visibility="gone" />
+
+        <ProgressBar
+            android:id="@+id/resolver_progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginBottom="30dp"
+            android:layout_gravity="center"
+            android:indeterminate="true"
+            android:visibility="gone" />
+
+        <!-- Completion Elements -->
+
+        <TextView
+            android:id="@+id/scene_verify_authorization"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textColor="?attr/textColor"
+            android:visibility="gone"
+            tools:text="Access Granted" />
+
+        <TextView
+            android:id="@+id/scene_verify_error_description"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:lines="3"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="?attr/textColor"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/scene_verify_feedback_question"
+            style="@style/Base.TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="76dp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:fontFamily="@font/montserrat_bold"
+            android:padding="10dp"
+            android:textAlignment="center"
+            android:textColor="?attr/textColor"
+            android:textSize="20sp"
+            android:visibility="gone"
+            tools:text="Comments?" />
+
+        <com.validvoice.dynamic.scene.widgets.KeyboardEditText
+            android:id="@+id/scene_verify_feedback_comments"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:inputType="textMultiLine"
+            android:maxLength="256"
+            android:maxLines="5"
+            android:textAlignment="center"
+            android:textColor="?attr/textColor"
+            android:visibility="gone"
+            tools:ignore="labelFor" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/scene_verify_override_pin_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:hint="@string/scene_user_new_trainer_pin_hint"
+            android:inputType="number"
+            android:maxLength="6"
+            android:textAlignment="center"
+            android:textColor="?attr/textColor"
+            android:textColorHint="?attr/textColor"
+            android:visibility="gone"
+            tools:ignore="labelFor">
+
+            <com.validvoice.dynamic.scene.widgets.TextInputKeyboardEditText
+                android:id="@+id/scene_verify_override_pin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/scene_user_new_trainer_pin_hint"
+                android:inputType="number"
+                android:maxLength="6"
+                android:textColor="?attr/textColor"
+                android:textColorHint="?attr/textColor" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <LinearLayout
+            android:id="@+id/scene_verify_button_wrapper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <com.steelkiwi.library.ui.SeparateShapesView
+                android:id="@+id/scene_verify_button"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/view_height"
+                android:layout_gravity="center"
+                android:alpha="0.8"
+                android:visibility="gone"
+                app:ssv_all_text_caps="true"
+                app:ssv_done_drawable="@drawable/done"
+                app:ssv_left_shape_drawable="@drawable/right_rounded_corner_drawable"
+                app:ssv_left_shape_text="@string/general_yes"
+                app:ssv_right_shape_drawable="@drawable/left_rounded_corner_drawable"
+                app:ssv_right_shape_text="@string/general_no"
+                app:ssv_single_shape="false"
+                app:ssv_auto_restore="true"
+                app:ssv_text_color="?attr/buttonText"
+                app:ssv_text_size="17sp" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:visibility="gone"
+        android:id="@+id/scene_banking_landing"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/scene_verify_banking"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/scene_banking_title"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="?attr/textColor" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1.25"
+            android:padding="35dp"
+            android:id="@+id/logo_icon"
+            android:scaleType="fitCenter"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/logo_icon"
+            android:layout_gravity="center"
+            />
+
+
+        <TextView
+            android:id="@+id/scene_verify_bank_details"
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="8dp"
+            android:fontFamily="@font/montserrat_bold"
+            android:text="@string/scene_banking_account_balance"
+            android:layout_gravity="center"
+            android:textAlignment="center"
+            android:textColor="?attr/textColor" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/accountDetails"
+                style="@style/HomePageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="10dp"
+                android:layout_margin="@dimen/margin_20"
+                android:text="@string/scene_banking_details"
+             />
+
+            <Button
+                android:id="@+id/accountHistory"
+                style="@style/HomePageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_20"
+                android:padding="10dp"
+                android:text="@string/scene_banking_history" />
+
+
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/scene_go_home"
+            style="@style/HomePageButton"
+            android:padding="10dp"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_margin="@dimen/margin_20"
+            android:layout_height="wrap_content"
+            android:text="@string/scene_banking_go_home"/>
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,398 @@
+<resources>
+    <string name="app_name">V2access</string>
+
+    <!-- Navigation Drawer Strings -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_scene_home">Home</string>
+    <string name="navigation_drawer_scene_accounts">Accounts</string>
+    <string name="navigation_drawer_scene_devices">Devices</string>
+    <string name="navigation_drawer_scene_history">History</string>
+    <string name="navigation_drawer_scene_faq">Faq</string>
+    <string name="navigation_drawer_scene_settings">Settings</string>
+
+    <!-- Logo Description -->
+    <string name="logo_description">V2Verify Logo</string>
+    <string name="powered_by_validvoice">Powered By V2verify&lt;sup&gt;&lt;small&gt;TM&lt;/small&gt;&lt;/sup&gt;</string>
+
+    <!-- Shared Strings -->
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="no_record_audio_permission">This application cannot run because it does not have the record audio permission. The application will now exit.</string>
+    <string name="audio_permission_rationale">Access to the microphone is needed to enroll and verify users.</string>
+    <string name="close">Close</string>
+    <string name="understand">I Understand</string>
+
+    <!-- delete Strings -->
+    <string name="action_delete_label">"Delete %s"</string>
+    <string name="action_delete_message">"Are you sure you want to delete '%s'?"</string>
+
+    <!-- Capture SceneActor Strings -->
+    <string name="scene_capture_permission_camera_rationale">Access to the camera is needed to read QR codes</string>
+    <string name="scene_capture_no_camera_permission">This application cannot run because it does not have the camera permission.  The application will return to the home now.</string>
+    <string name="scene_capture_low_storage_error">Barcode detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="scene_capture_not_our_barcode">Not a Voxidem QR Code</string>
+    <string name="scene_capture_invalid_enroll_barcode">Voxidem expected an Enrollment Qr Code. Got a Verify Qr Code.</string>
+    <string name="scene_capture_invalid_verify_barcode">Voxidem expected a Verification Qr Code. Got an Enroll Qr Code.</string>
+    <string name="scene_capture_invalid_unknown_barcode">Invalid Voxidem Qr Code.</string>
+
+    <!-- User Setup SceneActor Strings -->
+    <string name="scene_user_setup_content_description">image</string>
+    <string name="scene_user_setup_display">Device Setup</string>
+    <string name="scene_user_setup_new_user">New User</string>
+    <string name="scene_user_setup_continue_user">Continue User Enrollment</string>
+    <string name="scene_user_setup_existing_user">Existing User</string>
+    <string name="scene_user_setup_capture_code">Capture Code</string>
+
+    <!-- User New SceneActor Strings -->
+    <string name="scene_user_new_first_name_hint">First Name</string>
+    <string name="scene_user_new_last_name_hint">Last Name</string>
+    <string name="scene_user_new_user_name_hint">Username</string>
+    <string name="scene_user_new_gender_hint"> Gender</string>
+    <string name="scene_user_new_language_hint">Vocal Language</string>
+    <string name="scene_user_new_primary_phone_hint">Primary Phone</string>
+    <string name="scene_user_new_email_address_hint">E-Mail Address</string>
+    <string name="scene_user_new_trainer_pin_hint">Training Token</string>
+    <string name="scene_user_new_submit">Submit</string>
+    <string name="scene_user_new_begin">Begin</string>
+    <string name="scene_user_new_first_name_error">First Name is required</string>
+    <string name="scene_user_new_last_name_error">Last Name is required</string>
+    <string name="scene_user_new_user_name_error">User Name is required</string>
+    <string name="scene_user_new_user_name_limit_error">User Name is out of range. Min Length: 5. Max Length: 16</string>
+    <string name="scene_user_new_user_name_invalid_error">User Name uses illegal characters</string>
+    <string name="scene_user_new_user_name_found_error">User Name is already in use</string>
+    <string name="scene_user_new_vocal_gender_error">Vocal Gender is required</string>
+    <string name="scene_user_new_vocal_language_error">Vocal Language is required</string>
+    <string name="scene_user_new_vocal_language_unsupported_error">Vocal Language is unsupported</string>
+    <string name="scene_user_new_primary_phone_error">Phone Number is required</string>
+    <string name="scene_user_new_primary_phone_invalid_error">Phone Number is invalid</string>
+    <string name="scene_user_new_primary_phone_found_error">Phone Number is already in use</string>
+    <string name="scene_user_new_email_address_error">E-Mail Address is required</string>
+    <string name="scene_user_new_error">There was a Network Connection Problem. Please Try Again.</string>
+    <string name="scene_user_new_email_address_invalid_error">E-Mail Address is invalid</string>
+    <string name="scene_user_new_email_address_found_error">E-Mail Address is already in use</string>
+    <string name="scene_user_new_trainer_pin_error">Trainer PIN is required</string>
+    <string name="scene_user_new_trainer_pin_invalid_error">Trainer PIN MUST be 6 digits</string>
+
+    <!-- User Existing Setup SceneActor Strings -->
+    <string name="scene_user_existing_username_hint">Login Credential</string>
+    <string name="scene_user_existing_username_login">Enter Login Credential to Start Session</string>
+    <string name="scene_user_existing_username_empty_error">Credential  is required</string>
+    <string name="scene_user_existing_username_not_exist_error">Login Credential does not exist</string>
+    <string name="action_login">Start</string>
+
+    <!-- Re- enrollment -->
+
+    <string name="scene_user_enroll">Enter Training Token to Re-enroll</string>
+    <string name="scene_token_enroll">Training Token</string>
+
+
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+
+    <!-- SceneActor Home Strings -->
+    <string name="scene_home_action_refresh">Refresh</string>
+    <string name="scene_home_swipe_to_refresh">Swipe down to refresh</string>
+    <string name="scene_home_device_add_nickname_hint">Device Nickname</string>
+    <string name="scene_home_device_add_nickname_exists_error">Nickname already exists</string>
+    <string name="scene_home_device_add_nickname_error">Nickname is required</string>
+
+
+    <!-- SceneActor Sve Strings -->
+    <string name="scene_sve_result_content_description">Sve Result</string>
+    <string name="scene_sve_say">Say &#8230;</string>
+    <string name="scene_sve_phone_number">Your Phone Number</string>
+    <string name="scene_sve_full_address">Your Full Address</string>
+    <string name="scene_sve_full_name">Your Full Name</string>
+    <string name="scene_sve_numbers">from 0 to 9</string>
+    <string name="scene_sve_challenge_name">Challenge</string>
+    <string name="scene_sve_challenge_grammar_initial">[#][#][#][#][#][#][#][#][#][#][#][#]</string>
+    <string name="scene_sve_challenge_grammar">[#][#][#][#]</string>
+
+    <!-- SceneActor Enroll Strings -->
+    <string name="scene_enroll_content_description">ValidVoice Icon</string>
+    <string name="scene_enroll_enroll_by_voice">Enroll By Voice</string>
+    <string name="scene_enroll_enrolled_by_voice">Enrolled By Voice</string>
+    <string name="scene_enroll_listening">LISTENING &#8230;</string>
+    <string name="scene_enroll_say">Say &#8230;</string>
+    <string name="scene_enroll_train">TRAINING &#8230;</string>
+    <string name="scene_enroll_begin">Begin</string>
+    <string name="scene_enroll_continue">Continue</string>
+    <string name="scene_enroll_done">Done</string>
+    <string name="scene_enroll_try_again">Try Again</string>
+    <string name="scene_enroll_trained">Trained</string>
+    <string name="scene_enroll_success">Success</string>
+    <string name="scene_enroll_instructions_strict_form">To complete the enrollment, please answer the prompts that appear on the screen.</string>
+    <string name="scene_enroll_instructions_confirm_enroll">Enrollment Complete. Now, let us start your first verification.</string>
+    <string name="scene_enroll_instructions_confirm_training">Now, lets go through a set of training verifications.</string>
+    <string name="scene_enroll_instructions_comolete_training">A few more training verifications and you are good to go.</string>
+    <string name="scene_enroll_instructions_server_failure">There seems to be an issue with the Network Connection. Please try again later.</string>
+    <string name="scene_enroll_instructions_result_failure">"Result Error Occurred [%s]. Try again later."</string>
+    <string name="scene_enroll_instructions_speech_failure">We are unable to understand you. Please find a quieter environment and try again.</string>
+    <string name="scene_train_instructions_speech_failure">Training Unsuccessful. Please contact v2Verify for further assistance.</string>
+
+    <!-- SceneActor Verify Strings -->
+    <string name="scene_verify_content_description">ValidVoice Icon</string>
+    <string name="scene_verify_verify_by_voice">Verify by Voice</string>
+    <string name="scene_verify_verified_by_voice">Verified by Voice</string>
+    <string name="scene_verify_listening">Listening &#8230;</string>
+    <string name="scene_verify_say">Say &#8230;</string>
+    <string name="scene_verify_instructions_server_failure">Server Error Occurred [%s]. Try again later.</string>
+    <string name="scene_verify_instructions_result_failure">"Result Error Occurred [%s]. Try again later."</string>
+    <string name="scene_enroll_instructions_not_enough_speech_failure">Unable to Enroll, Please try again later.</string>
+    <string name="scene_verify_instructions_speech_tip">Tip</string>
+    <string name="scene_verify_instructions_speech_failure">Please try again from a quieter location. Be sure to hold the device closer to your mouth and speak louder.</string>
+    <string name="scene_verify_calibrate_speech_failure">Calibrating microphone for background noise.</string>
+    <string name="scene_background_failure">Microphone detected the background is too noisy. Please make sure your sorrounding is quiet and try again.</string>
+    <string name="scene_intent_failure">Network Connection Problem.Please refresh the browser and Try again.</string>
+    <string name="scene_lockedout_failure" translatable="false">you have been locked out of the system. Please contact the customer support for assistance</string>
+
+    <string name="scene_verify_number_result_content_description">Verification Number Result</string>
+    <string name="scene_verify_name_result_content_description">Verification Name Result</string>
+
+    <string name="scene_verify_verified">Verified</string>
+    <string name="scene_verify_alive">Alive</string>
+    <string name="scene_verify_authorized">Authorized</string>
+
+    <string name="scene_verify_again">Attempt Again</string>
+    <string name="scene_verify_cancel">Cancel</string>
+
+    <string name="scene_verify_access_granted">Access Granted</string>
+    <string name="scene_verify_access_granted_pwd_reset">Your Reset Password</string>
+    <string name="scene_verify_access_override">Access Override</string>
+    <string name="scene_verify_access_denied">Access Denied - Try Again</string>
+    <string name="scene_verify_access_denied_not_enough_speech">Access Denied - Not Enough Speech</string>
+    <string name="scene_verify_access_denied_error">Access Denied - Error Occurred</string>
+
+    <string name="scene_verify_add_new_device">Enter a nickname below to pair this mobile device with this browser. This eliminates the need to scan a QR-CODE.</string>
+    <string name="scene_verify_add_new_device_no">No</string>
+    <string name="scene_verify_add_new_device_yes">Yes</string>
+    <string name="scene_verify_add_new_device_next">Next</string>
+
+    <string name="scene_verify_feedback_question_break_attempt">Was this a Break Attempt?</string>
+    <string name="scene_verify_feedback_question_recording">Was this an Audio Recording?</string>
+    <string name="scene_verify_feedback_question_background_noise">Was there any Background Noise?</string>
+    <string name="scene_verify_feedback_question_comments">Comments?</string>
+    <string name="scene_verify_feedback_question_error">An Error has occurred. Please describe what you were doing.</string>
+
+    <string name="scene_verify_override_pin_hint">Override PIN</string>
+    <string name="scene_verify_override_pin_error">Override PIN is required</string>
+    <string name="scene_verify_override_pin_invalid_error">Override PIN MUST be 6 digits</string>
+
+    <string name="scene_verify_resolver_description">(please wait while we verify that its you)</string>
+
+    <!-- SceneActor History Strings -->
+    <string name="scene_history_type">Type</string>
+    <string name="scene_history_user">User</string>
+    <string name="scene_history_result">Result</string>
+    <string name="scene_history_device">Device</string>
+    <string name="scene_history_site">Site</string>
+
+    <string name="scene_history_enrolled">enrolled</string>
+    <string name="scene_history_not_enrolled">not enrolled</string>
+
+    <string name="scene_history_verified">verified</string>
+    <string name="scene_history_not_verified">not verified</string>
+
+    <string name="scene_history_granted">granted</string>
+    <string name="scene_history_not_granted">not granted</string>
+
+    <string name="scene_history_linked">linked</string>
+    <string name="scene_history_not_linked">unable to link</string>
+
+    <string name="scene_history_door">door</string>
+    <string name="scene_history_account">account</string>
+
+    <string name="scene_history_enrollment_type">%1$s %2$s.</string>
+    <string name="scene_history_enrollment_verification_type">%1$s enrollment %2$s.</string>
+    <string name="scene_history_verification_type">%1$s %2$s access to %3$s \'%4$s\' for \'%5$s\'.</string>
+    <string name="scene_history_verification_device_type">%1$s %2$s access to account \'%3$s\' for \'%4$s\' on device \'%5$s\'.</string>
+    <string name="scene_history_account_link_type">%1$s %2$s access to account \'%3$s\' for \'%4$s\'.F</string>
+
+    <string name="scene_history_account_delete_type">%1$s deleted an account \'%2$s\' for \'%3$s\'.</string>
+    <string name="scene_history_device_link_type">%1$s added a new device \'%2$s\'.</string>
+    <string name="scene_history_device_update_type">%1$s changed their device nickname from \'%2$s\' to \'%3$s\'.</string>
+    <string name="scene_history_device_delete_type">%1$s deleted their device \'%2$s\'.</string>
+
+    <!-- SceneActor Settings Strings -->
+    <string name="scene_settings_user_account_header">Account</string>
+    <string name="scene_settings_user_logout">Close Session</string>
+
+    <string name="scene_settings_general_header">General</string>
+    <string name="scene_settings_general_animations">Animations: %s</string>
+    <string name="scene_settings_general_feedback">Feedback: %s</string>
+    <string name="scene_settings_general_noise_cancellation">Noise Cancellation: %s</string>
+    <string name="scene_settings_general_dark_mode">Dark Mode: %s</string>
+    <string name="scene_settings_general_sensitivity_option">Log off Sensitivity: %s</string>
+    <string name="scene_settings_general_question_tone">QuestionTone: %s</string>
+    <string name="scene_settings_general_speech_to_text">Speak Question: %s</string>
+    <string name="scene_settings_general_enabled">Enabled</string>
+    <string name="scene_settings_general_disabled">Disabled</string>
+
+    <string name="scene_settings_calibrate">Adjust Threshold</string>
+    <string name="scene_settings_calibration">Calibration</string>
+    <string name="scene_settings_calibration_reset">Reset Threshold</string>
+    <string name="scene_settings_calibration_levels_last">Amplitude (Last)</string>
+    <string name="scene_settings_calibration_levels_peak">Amplitude (Peak)</string>
+    <string name="scene_settings_calibration_levels_high">High</string>
+    <string name="scene_settings_calibration_levels_mean">Mean</string>
+    <string name="scene_settings_calibration_levels_low">Low</string>
+    <string name="scene_settings_calibration_levels_silence">Amplitude (Silence)</string>
+    <string name="scene_settings_calibration_levels_default">Default</string>
+    <string name="scene_settings_calibration_levels_current">Current</string>
+    <string name="scene_settings_calibration_commit">Commit</string>
+    <string name="scene_settings_calibration_background_too_noisy">Unable to detect speech. The background is too noisy. Please go to a quieter environment.</string>
+
+    <string name="scene_settings_debugging_header">Re - Enrollment</string>
+    <string name="scene_settings_debugging_voice_print_id">Voice Print Id: %s</string>
+    <string name="scene_settings_debugging_adaptive_microphone">Adaptive Microphone: %s</string>
+    <string name="scene_settings_debugging_capture_lead_in_speech">Capture Lead In Speech: %s</string>
+    <string name="scene_settings_debugging_capture_lead_in_speech_millis">Capture Lead-In Millis:</string>
+    <string name="scene_settings_debugging_silence_threshold">Silence Threshold: %s</string>
+    <string name="scene_settings_logoff_sensitivity">Log off Sensitivity: %s</string>
+    <string name="scene_settings_logoff_sensitivity_low">15 Steps</string>
+    <string name="scene_settings_logoff_sensitivity_medium">10 Steps</string>
+    <string name="scene_settings_logoff_sensitivity_high">5 Steps</string>
+    <string name="scene_settings_debugging_re_enroll">START</string>
+    <string name="scene_settings_debugging_card_header">Card Information</string>
+    <string name="scene_settings_debugging_select_language" translatable="false">Select Language</string>
+    <string name="scene_settings_debugging_select_companyId" translatable="false">Change Company Id</string>
+    <string name="scene_settings_debugging_card">Card Info</string>
+    <string name="scene_settings_debugging_clear_accounts">Clear Accounts</string>
+    <string name="scene_settings_debugging_clear_devices">Clear Devices</string>
+    <string name="scene_settings_debugging_clear_history">Clear History</string>
+
+    <string-array name="scene_settings_debugging_capture_lead_in_speech_millis_array">
+        <item>100</item>
+        <item>150</item>
+        <item>200</item>
+        <item>250</item>
+        <item>300</item>
+        <item>350</item>
+        <item>400</item>
+        <item>450</item>
+        <item>500</item>
+    </string-array>
+
+    <string name="scene_settings_version_header">Version</string>
+
+    <string name="scene_settings_policies_header">Policies</string>
+    <string name="scene_settings_privacy_policy">Privacy Policy</string>
+    <string name="scene_settings_privacy_policy_url">https://www.v2verify.com/privacy-policy</string>
+
+    <string name="action_settings">Settings</string>
+
+    <!-- SceneActor Account Strings -->
+    <string name="scene_accounts_label">Accounts</string>
+    <string name="scene_accounts_company_icon_description">Company Icon</string>
+
+    <string name="scene_accounts_details">Account Details</string>
+    <string name="scene_accounts_company">Company</string>
+    <string name="scene_accounts_company_user">User</string>
+
+    <string name="scene_accounts_date_linked">Date Linked</string>
+    <string name="scene_accounts_date_last_signed_in">Date Last Signed In</string>
+    <string name="scene_accounts_last_signed_in_from">Last Signed In From</string>
+
+    <string name="scene_accounts_logout">Logout</string>
+
+    <!-- SceneActor Device Strings -->
+    <string name="scene_devices_label">Device</string>
+
+    <string name="scene_device_details">Device Details</string>
+    <string name="scene_device_type">Type</string>
+    <string name="scene_device_date_added">Date Added</string>
+    <string name="scene_device_date_last_used">Date Last Used</string>
+    <string name="scene_device_ip_address">Last Known IP Address</string>
+    <string name="scene_device_id">Device Id</string>
+    <string name="scene_devices_edit_nickname_hint">Edit Device Name</string>
+    <string name="scene_devices_edit_nickname_exists_error">Nickname already exists</string>
+    <string name="scene_devices_edit_nickname_required_error">Nickname is required</string>
+    <string name="scene_device_sign_out_all_devices">Sign Out All Devices</string>
+
+    <string name="general_yes">Yes</string>
+    <string name="general_no">No</string>
+    <string name="general_done">Done</string>
+    <string name="general_override">Override</string>
+
+
+    <!-- Scene: FAQs -->
+
+    <string name="best_practices">Authentication Best Practices</string>
+    <string name="speak_clearly">Speak in a clear normal voice</string>
+    <string name="speak_louder">If you have a naturally softer voice, attempt to speak in a little louder voice</string>
+    <string name="speak_distance">Hold the phone about 3-5 inches from your mouth</string>
+    <string name="speak_avoid_noise">Avoid noisy areas</string>
+    <string name="speak_complete">Provide clear and complete answers to all questions</string>
+    <string name="speak_wait">Wait until the prompt on the device to answer the question</string>
+    <string name="faqImage">FAQ Image</string>
+
+
+    <!-- Moto -->
+    <string name="moto">Confirming Your Identity at the Speed of Voice</string>
+
+
+    <!-- Login Page Instructions -->
+    <string name="scene_home_device_info">
+        <![CDATA[
+            <h3>Select the Device Above</h3><br>
+        ]]>
+    </string>
+
+    <string name="scene_enrollment_instruction_ques1">Move to a quiet Location.</string>
+    <string name="scene_enrollment_instruction_ques2">Hold the device 3-5 inches from your mouth.</string>
+    <string name="scene_enrollment_instruction_ques3">Speak in a normal and clear voice.</string>
+    <string name="scene_enrollment_instruction_err_ques1">It is important to answer the question as they appear on the screen.</string>
+    <string name="scene_enrollment_instruction_err_ques2">Clear voice is needed for improved Enrollment</string>
+    <string name="scene_enrollment_instruction_err_ques3">Please move to a quiet environment.</string>
+
+
+    <!-- Token Page Instructions -->
+
+    <string name="user_token_title">Create Your Temporary Training Code</string>
+    <string name="user_token_use">The Temporary Training Code is used to enhance your voice profile.</string>
+    <string name="user_token_create_intruction">Create a personal 6 digit Temporary Training Code below and you will be taken to the voice enrollment page.</string>
+
+
+    <string name="scan_qr_code">Scan QR-CODE</string>
+    <string name="mobile_login" translatable="false">MOBILE LOGIN</string>
+    <string name="intent_log_in">LOG IN</string>
+
+
+    <!-- Traning Verification Process -->
+    <string name="scene_enrollment_training_fail">We suggest you try to speak little louder/clearer and answer the prompts as they are.</string>
+    <string name="scene_enrollment_training_pass">GREAT JOB!! You are on the right track.</string>
+    <string name="scene_enrollment_training_complete">GREAT JOB!! You have completed the training process!!</string>
+    <string name="scene_enrollment_training_cancelled">Voice verification step has failed because the training could not be successful. Please try again from beginning.</string>
+
+
+    <!-- Disability Feature -->
+    <string name="scene_setting_disability_feature">You have enabled the audio prompt. Please wait for the prompt to finish before repeating the numbers.</string>
+
+
+    <!-- Banking Landing Page -->
+    <string name="scene_banking_title">Welcome to V2verify Banking</string>
+    <string name="scene_banking_details">Account   Details</string>
+    <string name="scene_banking_history">Account History</string>
+    <string name="scene_banking_go_home">LOG OUT</string>
+    <string name="scene_banking_account_balance">Account Balance: $12,400.24</string>
+
+
+
+    <!-- Company Id -->
+
+    <string name="scene_company_info">Enter Company ID</string>
+    <string name="scene_company_info_hint">Company ID</string>
+
+
+
+</resources>

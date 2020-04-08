@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="action_add">Add</string>
+    <string name="action_save">Save</string>
+    <string name="action_edit">Edit</string>
+    <string name="action_delete">Delete</string>
+    <string name="action_commit">Commit</string>
+    <string name="action_cancel">Cancel</string>
+    <string name="action_refresh">Refresh</string>
+
+</resources>

@@ -1,0 +1,51 @@
+
+https://www.ssaurel.com/blog/how-to-retrieve-an-unique-id-to-identify-android-devices/
+developer.samsung.com/technical-doc/view.do?v=T000000103
+
+
+private static String uniqueID = null;
+private static final String PREF_UNIQUE_ID = "PREF_UNIQUE_ID";
+ 
+public synchronized static String id(Context context) {
+   if (uniqueID == null) {
+      SharedPreferences sharedPrefs = context.getSharedPreferences(
+         PREF_UNIQUE_ID, Context.MODE_PRIVATE);
+      uniqueID = sharedPrefs.getString(PREF_UNIQUE_ID, null);
+ 
+      if (uniqueID == null) {
+         uniqueID = UUID.randomUUID().toString();
+         Editor editor = sharedPrefs.edit();
+         editor.putString(PREF_UNIQUE_ID, uniqueID);
+         editor.commit();
+      }
+   }
+ 
+    return uniqueID;
+}
+
+android.os.Build.SERIAL 
+
+String androidId = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
+
+
+import android.telephony.TelephonyManager;
+import android.content.Context;
+ 
+// ...
+ 
+TelephonyManager telephonyManager;
+ 
+telephonyManager = (TelephonyManager) getSystemService(Context.
+                    TELEPHONY_SERVICE);
+ 
+/*
+* getDeviceId() returns the unique device ID.
+* For example,the IMEI for GSM and the MEID or ESN for CDMA phones.
+*/
+String deviceId = telephonyManager.getDeviceId();
+ 
+/*
+* getSubscriberId() returns the unique subscriber ID,
+* For example, the IMSI for a GSM phone.
+*/
+String subscriberId = telephonyManager.getSubscriberId();

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Local Developer Key -->
+    <string name="sve_dev_key">6AC8FDD3-5B26-DC12-99AF-DAFA3809D830</string>
+
+    <!-- Local Application Key -->
+    <string name="sve_app_key">A3C94140-8B65-72AE-9242-86915029A6BE</string>
+
+    <!-- Local Connection String -->
+    <string name="sve_server">http://192.168.45.116:9010/</string>
+
+</resources>

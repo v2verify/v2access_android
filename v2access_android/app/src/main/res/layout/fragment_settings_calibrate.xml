@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.validvoice.voxidem.MainActivity"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/scene_settings_calibration_header"
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/scene_settings_calibration"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Medium"
+        android:id="@+id/scene_settings_calibration_listening"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:text="@string/scene_verify_listening"
+        android:padding="5dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_header"
+        />
+
+    <TextView
+        android:id="@+id/scene_settings_calibration_last_amplitude_levels_label"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="8dp"
+        android:text="@string/scene_settings_calibration_levels_last"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_listening" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_last_amplitude_high_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scene_settings_calibration_levels_high"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/scene_settings_calibration_last_amplitude_high_value"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_last_amplitude_levels_label" />
+
+    <TextView
+        android:id="@+id/scene_settings_calibration_last_amplitude_high_value"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        app:layout_constraintLeft_toLeftOf="@+id/scene_settings_calibration_last_amplitude_high_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_last_amplitude_levels_label"
+        tools:text="980" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_last_amplitude_mean_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scene_settings_calibration_levels_mean"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/scene_settings_calibration_last_amplitude_mean_value"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_last_amplitude_high_label" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_last_amplitude_mean_value"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        app:layout_constraintLeft_toLeftOf="@+id/scene_settings_calibration_last_amplitude_mean_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_last_amplitude_high_value"
+        tools:text="980" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_last_amplitude_low_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scene_settings_calibration_levels_low"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/scene_settings_calibration_last_amplitude_low_value"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_last_amplitude_mean_label" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_last_amplitude_low_value"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        app:layout_constraintLeft_toLeftOf="@+id/scene_settings_calibration_last_amplitude_low_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_last_amplitude_mean_value"
+        tools:text="980" />
+
+
+    <TextView
+        android:id="@+id/scene_settings_calibration_peak_amplitude_levels_label"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="16dp"
+        android:text="@string/scene_settings_calibration_levels_peak"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_last_amplitude_low_label" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_peak_amplitude_high_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scene_settings_calibration_levels_high"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/scene_settings_calibration_peak_amplitude_high_value"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_peak_amplitude_levels_label" />
+
+    <TextView
+        android:id="@+id/scene_settings_calibration_peak_amplitude_high_value"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        app:layout_constraintLeft_toLeftOf="@+id/scene_settings_calibration_peak_amplitude_high_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_peak_amplitude_levels_label"
+        tools:text="980" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_peak_amplitude_mean_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scene_settings_calibration_levels_mean"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/scene_settings_calibration_peak_amplitude_mean_value"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_peak_amplitude_high_label" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_peak_amplitude_mean_value"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        app:layout_constraintLeft_toLeftOf="@+id/scene_settings_calibration_peak_amplitude_mean_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_peak_amplitude_high_value"
+        tools:text="980" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_peak_amplitude_low_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scene_settings_calibration_levels_low"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/scene_settings_calibration_peak_amplitude_low_value"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_peak_amplitude_mean_label" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_peak_amplitude_low_value"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        app:layout_constraintLeft_toLeftOf="@+id/scene_settings_calibration_peak_amplitude_low_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_peak_amplitude_mean_value"
+        tools:text="980" />
+
+    <TextView
+        android:id="@+id/scene_settings_calibration_silence_thresholds_label"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|center"
+        android:layout_marginTop="16dp"
+        android:text="@string/scene_settings_calibration_levels_silence"
+        android:textAllCaps="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_peak_amplitude_low_label" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_silence_thresholds_default_label"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:text="@string/scene_settings_calibration_levels_default"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/scene_settings_calibration_silence_thresholds_default_value"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_silence_thresholds_label" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:id="@+id/scene_settings_calibration_silence_thresholds_default_value"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        app:layout_constraintLeft_toLeftOf="@+id/scene_settings_calibration_silence_thresholds_default_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_silence_thresholds_label" />
+
+    <TextView
+        android:id="@+id/scene_settings_calibration_silence_thresholds_current_label"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="@string/scene_settings_calibration_levels_current"
+        app:layout_constraintBottom_toBottomOf="@+id/scene_settings_calibration_silence_thresholds_current_value"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="@+id/scene_settings_calibration_silence_thresholds_current_value"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_silence_thresholds_default_label" />
+
+    <com.validvoice.dynamic.scene.widgets.KeyboardEditText
+        android:id="@+id/scene_settings_calibration_silence_thresholds_current_value"
+        style="@style/Base.TextAppearance.AppCompat.Small"
+        android:layout_width="105dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="viewEnd"
+        android:inputType="number"
+        app:layout_constraintLeft_toLeftOf="@+id/scene_settings_calibration_silence_thresholds_current_label"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scene_settings_calibration_silence_thresholds_default_value" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginRight="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_20"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_bias="0.0">
+
+        <com.steelkiwi.library.ui.SeparateShapesView
+            android:id="@+id/scene_settings_calibration_commit_button"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:ssv_all_text_caps="true"
+            app:ssv_done_drawable="@drawable/done"
+            app:ssv_left_shape_drawable="@drawable/left_rounded_corner_drawable"
+            app:ssv_right_shape_drawable="@drawable/right_rounded_corner_drawable"
+            app:ssv_left_shape_text="@string/action_commit"
+            app:ssv_right_shape_text="@string/action_cancel"
+            app:ssv_text_color="?attr/buttonText"
+            app:ssv_text_size="14sp"
+            app:ssv_single_shape="false"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.validvoice.voxidem.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/toolbar_overlay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/gradientColor"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:elevation="0dp">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            app:titleTextColor="?attr/textColor"
+            android:background="@drawable/transparent_background"
+            app:popupTheme="@style/AppTheme.PopupOverlay"/>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <com.validvoice.dynamic.scene.SceneLayout
+        xmlns:sceneActor="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/sceneLayout"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        sceneActor:headerView="@+id/frame_header"
+        sceneActor:headerShadowedHeight="6dp"
+        sceneActor:footerView="@+id/frame_footer"
+        sceneActor:footerShadowedHeight="6dp"
+        sceneActor:contentView="@+id/frame_container"
+        >
+
+        <FrameLayout
+            android:id="@+id/frame_header"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+        <FrameLayout
+            android:id="@+id/frame_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1" />
+
+        <FrameLayout
+            android:id="@+id/frame_footer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+
+
+        <TextView
+            android:id="@+id/powered_by"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/poweredBy"
+            android:textStyle="bold"
+            android:typeface="serif" />
+
+        <android.support.design.widget.BottomNavigationView
+            android:id="@+id/botton_nav"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:paddingTop="10dp"
+            sceneActor:itemIconSize="50dp"
+            app:labelVisibilityMode="unlabeled"
+            android:theme="@style/BottomNavigationTheme"
+            app:menu="@menu/activity_main_drawer">
+
+        </android.support.design.widget.BottomNavigationView>
+
+    </com.validvoice.dynamic.scene.SceneLayout>
+
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.validvoice.voxidem.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/CardSectionHeader"
+                android:text="@string/scene_settings_user_account_header"/>
+
+            <View style="@style/CardSectionDivider" />
+
+            <TextView
+                tools:text="tarsylas@gmail.com"
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_user_account_name"
+                />
+
+            <Button
+                android:id="@+id/settings_user_logout"
+                style="@style/CardSectionRoundedButton"
+                android:text="@string/scene_settings_user_logout" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/CardSectionHeader"
+                android:text="@string/scene_settings_general_header"/>
+
+            <View style="@style/CardSectionDivider" />
+
+            <CheckBox
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_general_animations"
+                android:text="@string/scene_settings_general_animations"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+            <CheckBox
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_general_noise_cancellation"
+                android:text="@string/scene_settings_general_noise_cancellation"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+            <CheckBox
+                style="@style/SettingsContentItem"
+                android:id="@+id/settings_general_question_tone"
+                android:text="@string/scene_settings_general_speech_to_text"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+            <CheckBox
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_general_dark_mode"
+                android:text="@string/scene_settings_general_dark_mode"
+                android:button="@null"
+                android:drawableEnd="?android:attr/listChoiceIndicatorMultiple"/>
+
+            <TextView
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_silence_threshold"
+                android:text="@string/scene_settings_debugging_silence_threshold"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_logoff_sensitivity_threshold"
+                android:text="@string/scene_settings_logoff_sensitivity"
+                android:layout_marginBottom="8dp"/>
+
+            <SeekBar
+                android:id="@+id/settings_logoff_sensitivity_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:max="2"
+                android:progress="1" />
+
+            <Button
+                android:id="@+id/settings_calibrate"
+                style="@style/CardSectionRoundedButton"
+                android:text="@string/scene_settings_calibrate"
+                android:layout_marginBottom="8dp" />
+
+            <Button
+                android:id="@+id/settings_calibration_reset"
+                style="@style/CardSectionRoundedButton"
+                android:text="@string/scene_settings_calibration_reset"
+                android:layout_marginBottom="8dp"
+                android:visibility="gone"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp">
+
+            <TextView
+                style="@style/CardSectionHeader"
+                android:text="@string/scene_settings_version_header" />
+
+            <View style="@style/CardSectionDivider" />
+
+            <TextView
+                tools:text="1.0.12"
+                style="@style/CardSectionContentItem"
+                android:id="@+id/settings_application_version"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/bg_card"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="10dp">
+
+            <TextView
+                style="@style/CardSectionHeader"
+                android:text="@string/scene_settings_policies_header" />
+
+            <View
+                style="@style/CardSectionDivider"
+                android:layout_marginBottom="16dp" />
+
+            <Button
+                style="@style/CardSectionRoundedButton"
+                android:id="@+id/settings_application_privacy_policy"
+                android:text="@string/scene_settings_privacy_policy" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

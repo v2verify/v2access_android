@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Button
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/CardSectionNoticedButton"
+    android:id="@+id/scene_device_sign_out_all_devices"
+    android:text="@string/scene_device_sign_out_all_devices"
+    >
+</Button>

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimary">#66F235</color>
+    <color name="colorSecondary">#FFFFFF</color>
+    <color name="colorSecondaryDark">#041B44</color>
+    <color name="colorPrimaryDark">#15B404</color>
+    <color name="colorPrimaryLight">#6DDA61</color>
+    <color name="colorAccent">#66F235</color>
+    <color name="colorNavHeaderDark">#F4F4F4</color>
+    <color name="colorNavHeader">#051024</color>
+    <color name="errorColor">#FF6401</color>
+    <color name="buttonBorder">#C7C4C4</color>
+    <color name="buttonText">#051024</color>
+    <color name="poweredBy">#5B6370</color>
+
+    <color name="colorNavText">#051024</color>
+    <color name="colorNavTextDark">#FFFFFF</color>
+    <color name="colorText">#051024</color>
+    <color name="colorTextDark">#FFFFFF</color>
+    <color name="faqImageColor">#E4D5D5</color>
+    <color name="arrowColor">#6EDD6E</color>
+
+    <color name="colorStatusListening">#ff2d55</color>
+    <color name="colorStatusNotListening">@color/colorText</color>
+
+
+</resources>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.sothree.slidinguppanel.SlidingUpPanelLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:sothree="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/sliding_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="bottom"
+    sothree:umanoShadowHeight="0dp"
+    sothree:umanoPanelHeight="35dp"
+    sothree:umanoDragView="@+id/drag_view"
+    sothree:umanoScrollableView="@+id/historyListView"
+    >
+
+    <!-- MAIN CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="4"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                tools:text="Office PC"
+                style="@style/MainContentHeader"
+                android:id="@+id/device_name"
+                android:textColor="?attr/textColor"/>
+
+        </FrameLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="7">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    style="@style/FloatingContentHeader"
+                    android:layout_height="35dp"
+                    android:text="@string/scene_device_details" />
+
+                <View style="@style/HorizontalDivider" />
+
+                <TextView
+                    style="@style/FloatingContentSubHeading"
+                    android:text="@string/scene_device_type" />
+
+                <TextView
+                    android:id="@+id/device_type"
+                    style="@style/FloatingContentDetail"
+                    tools:text="Chrome" />
+
+                <View style="@style/FloatingHorizontalDivider" />
+
+                <TextView
+                    style="@style/FloatingContentSubHeading"
+                    android:text="@string/scene_device_date_added" />
+
+                <TextView
+                    android:id="@+id/device_date_added"
+                    style="@style/FloatingContentDetail"
+                    tools:text="2017-03-24" />
+
+                <View style="@style/FloatingHorizontalDivider" />
+
+                <TextView
+                    style="@style/FloatingContentSubHeading"
+                    android:text="@string/scene_device_date_last_used" />
+
+                <TextView
+                    android:id="@+id/device_date_last_used"
+                    style="@style/FloatingContentDetail"
+                    tools:text="2017-03-24" />
+
+               <!--<View style="@style/FloatingHorizontalDivider" />-->
+
+                <TextView
+                    style="@style/FloatingContentSubHeading"
+                    android:text="@string/scene_device_id"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/device_id"
+                    style="@style/FloatingContentDetail"
+                    tools:text="63AE966E-C284-A32E-AF10-010EB7C4AA9F"
+                    android:visibility="gone"/>
+
+                <!--<View style="@style/FloatingHorizontalDivider" />-->
+
+                <TextView
+                    style="@style/FloatingContentSubHeading"
+                    android:text="@string/scene_device_ip_address"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/device_ip_address"
+                    style="@style/FloatingContentDetail"
+                    android:visibility="gone"
+                    tools:text="127.0.0.1" />
+
+                <View
+                    style="@style/FloatingHorizontalDivider" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <!-- SLIDING CONTENT -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/drag_view">
+
+        <View style="@style/HorizontalDivider" />
+
+        <TextView
+            style="@style/FloatingContentHeader"
+            android:layout_height="35dp"
+            android:text="@string/navigation_drawer_scene_history"/>
+
+        <View style="@style/HorizontalDivider" />
+
+        <ListView
+            android:id="@+id/historyListView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:divider="?attr/gradientColor"
+            android:dividerHeight="4dp">
+        </ListView>
+
+    </LinearLayout>
+
+</com.sothree.slidinguppanel.SlidingUpPanelLayout>

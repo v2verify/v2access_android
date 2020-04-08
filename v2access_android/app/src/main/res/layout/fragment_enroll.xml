@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.validvoice.voxidem.MainActivity"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:animateLayoutChanges="true"
+    android:keepScreenOn="true"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1.25"
+        android:padding="35dp"
+        android:contentDescription="@string/scene_enroll_content_description"
+        app:srcCompat="@drawable/ic_microphone_green"
+        android:id="@+id/scene_enroll_microphone_image" />
+
+    <TextView
+        style="@style/Base.TextAppearance.AppCompat.Display1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorPrimary"
+        android:id="@+id/enroll_text_label"
+        android:text="@string/scene_enroll_enroll_by_voice"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/scene_enroll_button_frame">
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Medium"
+                android:id="@+id/scene_enroll_listening"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:text="@string/scene_enroll_listening"
+                android:padding="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:visibility="gone"
+                />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Headline"
+                android:id="@+id/scene_enroll_training"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="top|center"
+                android:padding="10dp"
+                android:textColor="?attr/textColor"
+                android:fontFamily="@font/montserrat_bold"
+                android:text="@string/scene_enroll_train"
+                />
+
+            <TextView
+                style="@style/Base.TextAppearance.AppCompat.Large"
+                android:id="@+id/scene_enroll_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textAlignment="center"
+                android:text="@string/scene_enroll_instructions_strict_form"
+                android:paddingTop="10dp"
+                android:textColor="?attr/textColor"
+                android:paddingLeft="10dp"
+                android:fontFamily="@font/montserrat_bold"
+                android:paddingRight="10dp"
+                />
+
+            <ProgressBar
+                android:id="@+id/scene_enroll_train_progress"
+                android:layout_width="138dp"
+                android:layout_height="138dp"
+                android:layout_gravity="center"
+                android:indeterminate="true"
+                android:visibility="gone"/>
+
+            <ProgressBar
+                android:id="@+id/enrollment_question_progress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:indeterminate="false"
+                android:max="25"
+                android:alpha="0.9"
+                android:indeterminateTintMode="src_in"
+                android:minHeight="100dp"
+                android:minWidth="200dp"
+                android:progress="1" />
+
+
+            <LinearLayout
+                android:id="@+id/scene_enroll_group"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:paddingTop="50dp">
+
+            </LinearLayout>
+
+        </FrameLayout>
+
+
+        <LinearLayout
+            android:id="@+id/scene_enroll_button_frame"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_alignParentBottom="true">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                />
+
+            <LinearLayout
+                android:id="@+id/scene_enroll_button_insturctions"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_margin="@dimen/margin_20"
+                android:orientation="vertical">
+
+                <Button
+                    android:id="@+id/scene_enroll_button_ins_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:text="@string/scene_verify_add_new_device_next"
+                    android:layout_margin="15dp"
+                    android:textColor="@color/buttonText"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+            <Button
+                android:id="@+id/scene_enroll_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@drawable/button_background"
+                android:text="@string/scene_enroll_done"
+                android:layout_margin="15dp"
+                android:textColor="@color/buttonText"
+                android:textSize="20sp"
+                />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

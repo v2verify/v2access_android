@@ -1,0 +1,346 @@
+<resources>
+    <string name="app_name">V2access</string>
+
+    <!-- Navigation Drawer Strings -->
+    <string name="navigation_drawer_open"> Mở ngăn điều hướng
+ </string>
+    <string name="navigation_drawer_close">Đóng ngăn điều hướng
+ </string>
+    <string name="navigation_drawer_scene_home">Home</string>
+    <string name="navigation_drawer_scene_accounts">Tài khoản</string>
+    <string name="navigation_drawer_scene_devices">Thiết bị</string>
+    <string name="navigation_drawer_scene_history">Lịch sử</string>
+    <string name="navigation_drawer_scene_faq">Faq</string>
+    <string name="navigation_drawer_scene_settings">Thiết lập</string>
+
+    <!-- Logo Description -->
+    <string name="logo_description">V2Verify Logo</string>
+    <string name="powered_by_validvoice">Powered By V2verify&lt;sup&gt;&lt;small&gt;TM&lt;/small&gt;&lt;/sup&gt;</string>
+
+    <!-- Shared Strings -->
+    <string name="ok">OK</string>
+    <string name="cancel">Huỷ</string>
+    <string name="no_record_audio_permission">Ứng dụng không được kích hoạt do không được phép ghi âm giọng nói.</string>
+    <string name="audio_permission_rationale">Truy cập vào microphone để ghi danh và xác thực khách hàng.</string>
+    <string name="close">Đóng</string>
+    <string name="understand">Hiểu</string>
+
+    <!-- delete Strings -->
+    <string name="action_delete_label">"Xoá"</string>
+    <string name="action_delete_message">"Bạn có chắc chắn xoá? "</string>
+
+    <!-- Capture SceneActor Strings -->
+    <string name="scene_capture_permission_camera_rationale">Cần truy cập vào camera để quét mã QR </string>
+    <string name="scene_capture_no_camera_permission">Ứng dụng không hoạt động do không truy cập được vào camera</string>
+    <string name="scene_capture_low_storage_error">Nhận dạng mã không tải được do không đủ bộ nhớ </string>
+    <string name="scene_capture_not_our_barcode">Không phải Voxidem QR Code</string>
+    <string name="scene_capture_invalid_enroll_barcode">Voxidem yêu cầu mã QR. Đề nghị lấy mã QR chuẩn</string>
+    <string name="scene_capture_invalid_verify_barcode"> Voxidem yêu cầu mã QR. Đề nghị lấy mã QR ghi danh chuẩn </string>
+    <string name="scene_capture_invalid_unknown_barcode">mã Voxidem Qr không hợp lệ</string>
+
+    <!-- User Setup SceneActor Strings -->
+    <string name="scene_user_setup_content_description">Hình ảnh</string>
+    <string name="scene_user_setup_display">Cài đặt thiết bị</string>
+    <string name="scene_user_setup_new_user">Khách hàng mới</string>
+    <string name="scene_user_setup_continue_user">Tiếp tục ghi danh khách hàng</string>
+    <string name="scene_user_setup_existing_user">Khách hang đã tồn tại</string>
+    <string name="scene_user_setup_capture_code">Ghi mã</string>
+
+    <!-- User New SceneActor Strings -->
+    <string name="scene_user_new_first_name_hint">Tên</string>
+    <string name="scene_user_new_last_name_hint">Họ</string>
+    <string name="scene_user_new_user_name_hint">Username</string>
+    <string name="scene_user_new_gender_hint">Giới tính giọng nói</string>
+    <string name="scene_user_new_language_hint">Ngôn ngữ</string>
+    <string name="scene_user_new_primary_phone_hint">Số điện thoại</string>
+    <string name="scene_user_new_email_address_hint">E-Mail </string>
+    <string name="scene_user_new_trainer_pin_hint">Mã thu thập</string>
+    <string name="scene_user_new_submit">Nộp</string>
+    <string name="scene_user_new_begin">Bắt đầu</string>
+    <string name="scene_user_new_first_name_error">Yêu cầu nhập tên</string>
+    <string name="scene_user_new_last_name_error">Yêu cầu nhập họ</string>
+    <string name="scene_user_new_user_name_error">Yêu cầu nhập tên người sử dụng</string>
+    <string name="scene_user_new_user_name_limit_error">Username không hợp lệ. Yêu cầu tên từ 5 đến 16 ký tự</string>
+    <string name="scene_user_new_user_name_invalid_error">UserName dùng ký tự không đúng</string>
+    <string name="scene_user_new_user_name_found_error">User name đã được sử dụng</string>
+    <string name="scene_user_new_vocal_gender_error">yêu cầu khai giới tính</string>
+    <string name="scene_user_new_vocal_language_error">yêu cầu khai ngôn ngữ</string>
+    <string name="scene_user_new_vocal_language_unsupported_error">Ngôn ngữ không được hỗ trợ</string>
+    <string name="scene_user_new_primary_phone_error">yêu cầu nhập số điện thoại</string>
+    <string name="scene_user_new_primary_phone_invalid_error">số điện thoại không hợp lệ</string>
+    <string name="scene_user_new_primary_phone_found_error">số điện thoại đã được sử dụng</string>
+    <string name="scene_user_new_email_address_error">yêu cầu nhập E-Mail</string>
+    <string name="scene_user_new_error">Có lỗi kết nối mạng. Yêu cầu thử lại sau</string>
+    <string name="scene_user_new_email_address_invalid_error">địa chỉ email không hợp lệ</string>
+    <string name="scene_user_new_email_address_found_error">E-Mail đã được sử dụng</string>
+    <string name="scene_user_new_trainer_pin_error">yêu cầu PIN thu thập</string>
+    <string name="scene_user_new_trainer_pin_invalid_error">PIN thu thập phải 6 ký tự</string>
+
+    <!-- User Existing Setup SceneActor Strings -->
+    <string name="scene_user_existing_username_hint"> Thông tin đăng nhập
+ </string>
+    <string name="scene_user_existing_username_login">Nhập Thông tin đăng nhập để bắt đầu phiên </string>
+    <string name="scene_user_existing_username_empty_error">Yêu cầu thông tin đăng nhập</string>
+    <string name="scene_user_existing_username_not_exist_error">Thông tin đăng nhập không tồn tại</string>
+    <string name="action_login">Bắt đầu</string>
+
+    <!-- Re- enrollment -->
+
+    <string name="scene_user_enroll">Nhập mã thu nhập để ghi danh </string>
+    <string name="scene_token_enroll">Mã thu nhập </string>
+
+
+
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Đăng ký</string>
+    <string name="action_sign_in_short">Đăng nhập</string>
+    <string name="error_invalid_email">email không hợp lệ</string>
+    <string name="error_invalid_password">Password quá ngắn</string>
+    <string name="error_incorrect_password">password không đúng</string>
+    <string name="error_field_required">Trường yêu cầu</string>
+
+    <!-- SceneActor Home Strings -->
+    <string name="scene_home_action_refresh">Khởi tạo lại</string>
+    <string name="scene_home_swipe_to_refresh">Kéo xuống để khởi tạo lại</string>
+    <string name="scene_home_device_add_nickname_hint">Tên thiết bị</string>
+    <string name="scene_home_device_add_nickname_exists_error">Tên đã tồn tại</string>
+    <string name="scene_home_device_add_nickname_error">Yêu cầu nhập tên</string>
+
+    <!-- SceneActor Sve Strings -->
+    <string name="scene_sve_result_content_description">Kết quà</string>
+    <string name="scene_sve_say">Nói &#8230;</string>
+    <string name="scene_sve_phone_number">Số điện thoại của bạn</string>
+    <string name="scene_sve_full_address">Địa chỉ đầy đủ của bạn</string>
+    <string name="scene_sve_full_name">Tên đầy đủ của bạn</string>
+    <string name="scene_sve_numbers">từ 0 đến 9</string>
+    <string name="scene_sve_challenge_name">Thử</string>
+    <string name="scene_sve_challenge_grammar_initial">[#][#][#][#][#][#][#][#][#][#][#][#]</string>
+    <string name="scene_sve_challenge_grammar">[#][#][#][#]</string>
+
+    <!-- SceneActor Enroll Strings -->
+    <string name="scene_enroll_content_description">Biểu tượng giọng nói hợp lệ</string>
+    <string name="scene_enroll_enroll_by_voice">Ghi danh bằng giọng nói</string>
+    <string name="scene_enroll_enrolled_by_voice"> Ghi danh bằng giọng nói </string>
+    <string name="scene_enroll_listening">Lắng nghe &#8230;</string>
+    <string name="scene_enroll_say">Nói &#8230;</string>
+    <string name="scene_enroll_train">Thu nhập &#8230;</string>
+    <string name="scene_enroll_begin">Bắt đầu</string>
+    <string name="scene_enroll_continue">Tiếp tục</string>
+    <string name="scene_enroll_done">Hoàn thành</string>
+    <string name="scene_enroll_try_again">Thử lại</string>
+    <string name="scene_enroll_trained">Thu nhập</string>
+    <string name="scene_enroll_success">Thành công</string>
+    <string name="scene_enroll_instructions_strict_form">Để kết thúc ghi danh, hãy trả lời các câu hỏi xuất hiện trên màn hình.</string>
+    <string name="scene_enroll_instructions_confirm_enroll">Ghi danh hoàn thành. Bắt đầu bước xác thực</string>
+    <string name="scene_enroll_instructions_confirm_training">Bắt đầu các bước xác thực thu nhập</string>
+    <string name="scene_enroll_instructions_comolete_training">Thêm một số bước thu nhập </string>
+    <string name="scene_enroll_instructions_server_failure">Có lỗi kết nối mạng. Đề nghị thử lại </string>
+    <string name="scene_enroll_instructions_result_failure">"Kết quả lỗi. Đề nghị thử lại "</string>
+    <string name="scene_enroll_instructions_speech_failure">Chúng tôi không nhận ra bạn. Đề nghi đến nơi yên tĩnh và thử lại </string>
+    <string name="scene_train_instructions_speech_failure">Thu nhập không thành công. Đề nghị liên hệ trung tâm chăm sóc khách hang </string>
+
+    <!-- SceneActor Verify Strings -->
+    <string name="scene_verify_content_description">Giọng nói hợp lệ </string>
+    <string name="scene_verify_verify_by_voice">Xác thực bằng giọng nói</string>
+    <string name="scene_verify_verified_by_voice">Xác thực bằng giọng nói</string>
+    <string name="scene_verify_listening">Nghe &#8230;</string>
+    <string name="scene_verify_say">Nói &#8230;</string>
+    <string name="scene_verify_instructions_server_failure">Lỗi server [%s]. Đề nghị thực hiện lại.</string>
+    <string name="scene_verify_instructions_result_failure">"Kết quả lỗi [%s]. Đề nghị thực hiện lại."</string>
+    <string name="scene_enroll_instructions_not_enough_speech_failure">Không thể ghi danh, đề nghị thực hiện lại</string>
+    <string name="scene_verify_instructions_speech_tip">Tip</string>
+    <string name="scene_verify_instructions_speech_failure">Đề nghị thực hiện lại từ vị trí yên tĩnh và đảm bảo thiết bị để gần miệng và nói to rõ ràng</string>
+    <string name="scene_verify_calibrate_speech_failure">Căn chỉnh microphone để giảm nhiễu nền</string>
+    <string name="scene_background_failure"> Nhiễu quá lới. Đề nghị đảm bảo không nhiễu và thử lại</string>
+    <string name="scene_intent_failure">Lỗi kết nối mạng. Đề nghị khơi tạo lại trình duyệt và thử lại</string>
+    <string name="scene_verify_number_result_content_description">Số kết quả xác thực</string>
+    <string name="scene_verify_name_result_content_description">Kết quả xác thực tên</string>
+
+    <string name="scene_verify_verified">Được xác thực</string>
+    <string name="scene_verify_alive">Alive</string>
+    <string name="scene_verify_authorized">Được xác thực</string>
+
+    <string name="scene_verify_again">Tạm thời thử lại</string>
+    <string name="scene_verify_cancel">Huỷ</string>
+
+    <string name="scene_verify_access_granted">Truy cập được bảo đảm</string>
+    <string name="scene_verify_access_granted_pwd_reset">Tạo lại mật khẩu</string>
+    <string name="scene_verify_access_override">Truy nhập được thực hiện lại</string>
+    <string name="scene_verify_access_denied">Truy nhập bị cấm – Đề nghị thực hiện lại</string>
+    <string name="scene_verify_access_denied_not_enough_speech">Truy cập bị cấm – Câu nói không đủ dài </string>
+    <string name="scene_verify_access_denied_error">Truy cập bị cấm – Lỗi xảy ra</string>
+
+    <string name="scene_verify_add_new_device">Nhập tên ở dưới để động bộ thiết bị với trình duyệt.</string>
+    <string name="scene_verify_add_new_device_no">No</string>
+    <string name="scene_verify_add_new_device_yes">Yes</string>
+    <string name="scene_verify_add_new_device_next">Next</string>
+    <string name="scene_verify_feedback_question_break_attempt">Bạn đang muốn thoát?</string>
+    <string name="scene_verify_feedback_question_recording">Bạn đang muốn ghi âm?</string>
+    <string name="scene_verify_feedback_question_background_noise">Có nhiễu nền không?</string>
+    <string name="scene_verify_feedback_question_comments">Câu hỏi?</string>
+    <string name="scene_verify_feedback_question_error">Lỗi xảy ra. Đề nghị mô tả bạn đang làm gì</string>
+    <string name="scene_verify_override_pin_hint">Ghi đè PIN</string>
+    <string name="scene_verify_override_pin_error">Yêu cầu ghi đè PIN</string>
+    <string name="scene_verify_override_pin_invalid_error">Mã PIN ghi đè phải 6 chữ số </string>
+    <string name="scene_verify_resolver_description">(Làm ơn đợi trong lúc chúng tôi xác thực bạn)</string>
+
+    <!-- SceneActor History Strings -->
+    <string name="scene_history_type">gõ</string>
+    <string name="scene_history_user">Khách hàng</string>
+    <string name="scene_history_result">Kết quả</string>
+    <string name="scene_history_device">Thiết bị</string>
+    <string name="scene_history_site">Vùng</string>
+    <string name="scene_history_enrolled">Đã được ghi danh</string>
+    <string name="scene_history_not_enrolled">Không được ghi danh</string>
+    <string name="scene_history_verified">Được xác thực</string>
+    <string name="scene_history_not_verified">Không được xác thực</string>
+    <string name="scene_history_granted">đảm bảo</string>
+    <string name="scene_history_not_granted">không đảm bảo</string>
+    <string name="scene_history_linked">được kết nối</string>
+    <string name="scene_history_not_linked">không được kết nối</string>
+    <string name="scene_history_door">cửa</string>
+    <string name="scene_history_account">tài khoản</string>
+    <string name="scene_history_enrollment_type">%1$s %2$s.</string>
+    <string name="scene_history_enrollment_verification_type">%1$s ghi danh %2$s.</string>
+    <string name="scene_history_verification_type">%1$s %2$s truy nhập vào %3$s \'%4$s\' để \'%5$s\'.</string>
+    <string name="scene_history_verification_device_type">%1$s %2$s truy nhập vào tài khoản \'%3$s\' để \'%4$s\' trên thiết bị \'%5$s\'.</string>
+    <string name="scene_history_account_link_type">%1$s %2$s truy cập vào tài khoản \'%3$s\' để \'%4$s\'.F</string>
+    <string name="scene_history_account_delete_type">%1$s xoá tài khoản \'%2$s\' để \'%3$s\'.</string>
+    <string name="scene_history_device_link_type">%1$s thêm thiết bị \'%2$s\'.</string>
+    <string name="scene_history_device_update_type">%1$s thay đổi tên thiết bị từ \'%2$s\' to \'%3$s\'.</string>
+    <string name="scene_history_device_delete_type">%1$s xoá thiết bị \'%2$s\'.</string>
+
+    <!-- SceneActor Settings Strings -->
+    <string name="scene_settings_user_account_header">Tài khoản</string>
+    <string name="scene_settings_user_logout">Đóng phiên</string>
+    <string name="scene_settings_general_header">Tổng quát</string>
+    <string name="scene_settings_general_animations">Ảnh động: %s</string>
+    <string name="scene_settings_general_feedback">Phản hồi: %s</string>
+    <string name="scene_settings_general_noise_cancellation">Loại bỏ nhiễu: %s</string>
+    <string name="scene_settings_general_dark_mode">Chế độ đêm: %s</string>
+    <string name="scene_settings_general_question_tone"> m câu hỏi: %s</string>
+    <string name="scene_settings_general_speech_to_text">Nói câu hỏi: %s</string>
+    <string name="scene_settings_general_enabled">Cho phép</string>
+    <string name="scene_settings_general_disabled">Không cho phép</string>
+    <string name="scene_settings_calibrate">Điều chỉnh ngưỡng</string>
+    <string name="scene_settings_calibration">Căn chỉnh</string>
+    <string name="scene_settings_calibration_reset">Thiết lập lại ngưỡng</string>
+    <string name="scene_settings_calibration_levels_last"> Biên độ (Cuối cùng)</string>
+    <string name="scene_settings_calibration_levels_peak"> Biên độ (Đỉnh)</string>
+    <string name="scene_settings_calibration_levels_high">Cao</string>
+    <string name="scene_settings_calibration_levels_mean">Trung bình</string>
+    <string name="scene_settings_calibration_levels_low">Thấp</string>
+    <string name="scene_settings_calibration_levels_silence">Biên độ (Im lặng)</string>
+    <string name="scene_settings_calibration_levels_default">Mặc định</string>
+    <string name="scene_settings_calibration_levels_current">Hiện tại</string>
+    <string name="scene_settings_calibration_commit">Cam kết</string>
+    <string name="scene_settings_calibration_background_too_noisy">Không thể xác định được giọng nói. Nhiễu quá lớn. Đề nghị thử lại ở nơi yên lặng.</string>
+    <string name="scene_settings_debugging_header">Ghi danh lại</string>
+    <string name="scene_settings_debugging_voice_print_id">ID giọng nói: %s</string>
+    <string name="scene_settings_debugging_adaptive_microphone">Microphone thích hợp: %s</string>
+    <string name="scene_settings_debugging_capture_lead_in_speech">Ghi âm đỉnh: %s</string>
+    <string name="scene_settings_debugging_capture_lead_in_speech_millis">Capture Lead-In Millis:</string>
+    <string name="scene_settings_debugging_silence_threshold">Ngưỡng im lặng: %s</string>
+    <string name="scene_settings_logoff_sensitivity">Độ nhạy đăng xuất: %s</string>
+    <string name="scene_settings_logoff_sensitivity_low">15 bước</string>
+    <string name="scene_settings_logoff_sensitivity_medium">10 bước</string>
+    <string name="scene_settings_logoff_sensitivity_high">5 bước</string>
+    <string name="scene_settings_debugging_re_enroll">BẮT ĐẦU</string>
+    <string name="scene_settings_debugging_card_header">Thông tin về thẻ</string>
+    <string name="scene_settings_debugging_card">thông tin thẻ</string>
+    <string name="scene_settings_debugging_clear_accounts">Xoá tài khoản</string>
+    <string name="scene_settings_debugging_clear_devices">Xoá thiết bị</string>
+    <string name="scene_settings_debugging_clear_history">Xoá lịch sử</string>
+    <string name="scene_settings_version_header">Version</string>
+    <string name="scene_settings_policies_header">Chính sách</string>
+    <string name="scene_settings_privacy_policy">Chính sách riêng</string>
+    <string name="scene_settings_privacy_policy_url">https://www.v2verify.com/privacy-policy</string>
+    <string name="action_settings">thiết lập</string>
+
+    <!-- SceneActor Account Strings -->
+    <string name="scene_accounts_label">tài khoản</string>
+    <string name="scene_accounts_company_icon_description">Biểu tượng công ty</string>
+    <string name="scene_accounts_details">Chi tiết tài khoản</string>
+    <string name="scene_accounts_company">Công ty</string>
+    <string name="scene_accounts_company_user">Người sử dụng</string>
+    <string name="scene_accounts_date_linked">ngày liên kết</string>
+    <string name="scene_accounts_date_last_signed_in">Ngày đăng nhập cuối cùng</string>
+    <string name="scene_accounts_last_signed_in_from">Ngày đăng nhập cuối cùng từ</string>
+    <string name="scene_accounts_logout">Đăng xuất</string>
+
+    <!-- SceneActor Device Strings -->
+    <string name="scene_devices_label">Thiết bị</string>
+    <string name="scene_device_details">Chi tiết thiết bị</string>
+    <string name="scene_device_type">Loại</string>
+    <string name="scene_device_date_added">Ngày được thêm vào</string>
+    <string name="scene_device_date_last_used">Ngày sử dụng cuối cùng</string>
+    <string name="scene_device_ip_address">Địa chỉ IP cuối cùng</string>
+    <string name="scene_device_id">ID thiết bị</string>
+    <string name="scene_devices_edit_nickname_hint">Sửa tên thiết bị</string>
+    <string name="scene_devices_edit_nickname_exists_error">Tên đã được sử dụng</string>
+    <string name="scene_devices_edit_nickname_required_error">Yêu cầu nhập tên</string>
+    <string name="scene_device_sign_out_all_devices">Đăng xuất trên tất cả các thiết bị</string>
+    <string name="general_yes">Yes</string>
+    <string name="general_no">No</string>
+    <string name="general_done">Hoàn thành</string>
+    <string name="general_override">Ghi đè</string>
+
+    <!-- Scene: FAQs -->
+
+    <string name="best_practices">Xác thực tốt</string>
+    <string name="speak_clearly">Hãy nói với giọng rõ ràng nhất</string>
+    <string name="speak_louder">Nếu giọng nói của bạn nhỏ, đề nghị nói to hơn</string>
+    <string name="speak_distance">Giữ thiết bị của bạn cách miệng 5 – 10 cm</string>
+    <string name="speak_avoid_noise">Hãy tránh khu vực ồn ào</string>
+    <string name="speak_complete">Đề nghị cung cấp câu trả lời rõ ràng và hoàn chỉnh cho các câu hỏi</string>
+    <string name="speak_wait">hãy đợi cho đến khi có lời nhắc để trả lời câu hỏi</string>
+    <string name="faqImage">FAQ</string>
+
+    <!-- Moto -->
+    <string name="moto">Khẳng định lại nhận dạng của bạn với tốc độ giọng nói thông thường</string>
+
+    <!-- Login Page Instructions -->
+    <string name="scene_home_device_info">Lựa chọn thiết bị ở trên</string>
+    <string name="scene_enrollment_instruction_ques1">Hãy chuyển đến khu vực yên tĩnh</string>
+    <string name="scene_enrollment_instruction_ques2">Giữ thiết bị cách miệng 5 – 10 cm</string>
+    <string name="scene_enrollment_instruction_ques3"> Bạn có ở môi trường nhiễu? </string>
+    <string name="scene_enrollment_instruction_err_ques1">Trả lời câu hỏi trên màn hình là bắt buộc và quan trọng</string>
+    <string name="scene_enrollment_instruction_err_ques2">Giọng nói rõ ràng giúp cho việc Ghi danh tốt hơn</string>
+    <string name="scene_enrollment_instruction_err_ques3">Đề nghị chuyển tới nơi yên tĩnh.</string>
+
+    <!-- Token Page Instructions -->
+
+    <string name="user_token_title">Hãy tạo mã thu nhập tạm thời</string>
+    <string name="user_token_use">Mã thu nhập tạm thời được sử dụng để nâng cao hồ sơ giọng nói của bạn</string>
+    <string name="user_token_create_intruction">Tạo mã thu nhập cá nhân 6 chữ số và bạn sẽ được chuyển tới trang ghi danh bằng giọng nói</string>
+    <string name="scan_qr_code">Quét QR-CODE</string>
+    <string name="intent_log_in">ĐĂNG NHẬP</string>
+
+    <!-- Traning Verification Process -->
+    <string name="scene_enrollment_training_fail">Đề nghị nói to và rõ ràng hơn và trả lời câu hỏi </string>
+    <string name="scene_enrollment_training_pass">TỐT, bạn đang làm đúng.</string>
+    <string name="scene_enrollment_training_complete">TÔT, bạn đã hoàn thành thu nhập giọng nói!!</string>
+    <string name="scene_enrollment_training_cancelled">Xác thực bằng giọng nói bị lỗi do quá trình thu nhập giọng nói không thành công. Đề nghị thực hiện lại từ đầu.</string>
+
+    <!-- Disability Feature -->
+    <string name="scene_setting_disability_feature">Bạn đã kích hoạt lời nhắc bằng âm thanh. Đề nghị đợi cho đến khi kết thúc lời nhắc trước khi lặp lại các số</string>
+
+
+   <!-- Banking Landing Page -->
+   <string name="scene_banking_title">Welcome to V2verify Banking</string>
+   <string name="scene_banking_details">Account   Details</string>
+   <string name="scene_banking_history">Account History</string>
+   <string name="scene_banking_go_home">LOG OUT</string>
+   <string name="scene_banking_account_balance">Account Balance: $12,400.24</string>
+
+
+
+   <!-- Company Id -->
+
+   <string name="scene_company_info">Enter Company ID</string>
+   <string name="scene_company_info_hint">Company ID</string>
+
+</resources>

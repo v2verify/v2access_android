@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+
+        <item
+            android:id="@id/scene_home"
+            android:checked="true"
+            android:checkable="true"
+            android:icon="@mipmap/ic_menu_home"
+            android:title="@string/navigation_drawer_scene_home" />
+
+        <!--
+        <item
+            android:id="@id/scene_accounts"
+            android:icon="@drawable/ic_menu_accounts"
+            android:checkable="true"
+            android:title="@string/navigation_drawer_scene_accounts" />
+            -->
+
+        <item
+            android:id="@id/scene_faq"
+            android:icon="@mipmap/ic_menu_faq"
+            android:checkable="true"
+            android:title="@string/navigation_drawer_scene_history" />
+
+        <item
+            android:id="@id/scene_settings"
+            android:icon="@mipmap/ic_menu_settings"
+            android:checkable="true"
+            android:title="@string/navigation_drawer_scene_settings" />
+
+        <item
+            android:id="@id/scene_devices"
+            android:icon="@mipmap/ic_menu_devices"
+            android:checkable="true"
+            android:title="@string/navigation_drawer_scene_devices" />
+
+        <item
+            android:id="@id/scene_history"
+            android:icon="@mipmap/ic_menu_log"
+            android:checkable="true"
+            android:title="@string/navigation_drawer_scene_history" />
+
+
+
+    </group>
+
+</menu>

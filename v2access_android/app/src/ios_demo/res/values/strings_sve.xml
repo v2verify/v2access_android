@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AWS Developer Key -->
+    <string name="sve_dev_key">A131D697-0615-WB65-02C5-FA43C012A6FF</string>
+
+    <!-- AWS Voxidem (Internal) Development Application Key -->
+    <string name="sve_app_key">5CCA8590-10B6-WE5D-7621-37499561A545</string>
+
+    <!-- Local Connection String -->
+    <string name="sve_server">http://v2ondemand.com:50102</string>
+
+</resources>

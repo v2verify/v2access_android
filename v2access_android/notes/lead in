@@ -1,0 +1,5 @@
+need to add a lead in parameter to the voice recorder,
+to keep the last 'x' milliseconds and attach those to the front end of the detected voice buffer
+
+so, if I detect voice above the threshold, then I cn back track 'x' milliseconds, and provide the lead in
+voice to allow for smoother audio

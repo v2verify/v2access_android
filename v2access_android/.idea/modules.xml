@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic.cloud/dynamic.cloud.iml" filepath="$PROJECT_DIR$/dynamic.cloud/dynamic.cloud.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic.db/dynamic.db.iml" filepath="$PROJECT_DIR$/dynamic.db/dynamic.db.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic.scene/dynamic.scene.iml" filepath="$PROJECT_DIR$/dynamic.scene/dynamic.scene.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dynamic.speech/dynamic.speech.iml" filepath="$PROJECT_DIR$/dynamic.speech/dynamic.speech.iml" />
+      <module fileurl="file://$PROJECT_DIR$/steelkiwi.library/steelkiwi.library.iml" filepath="$PROJECT_DIR$/steelkiwi.library/steelkiwi.library.iml" />
+      <module fileurl="file://$PROJECT_DIR$/v2access_android.iml" filepath="$PROJECT_DIR$/v2access_android.iml" />
+    </modules>
+  </component>
+</project>

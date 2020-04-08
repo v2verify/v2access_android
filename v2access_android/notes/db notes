@@ -1,0 +1,97 @@
+
+vox_audit_log_t
+    _id
+    audit_type
+    audit_batch_id
+    audit_table
+    audit_id
+    audit_action
+    audit_notes
+    audit_datetime
+    audit_username
+
+vox_audit_log_detail_t
+    _id
+    vox_audit_log_t._id
+    audit_field_name
+    audit_old_value
+    audit_new_value
+
+vox_customer_t
+    _id
+    ...
+
+vox_touchpoint_t
+    _id
+    customer_t._id
+    type
+    name
+    touchpoint_access                   <- web address -or- fixed intent id -or- what have you, can be renamed
+    ...
+
+vox_touchpoint_connection_t             <- ?? is this worth it, or suck it up into vox_touchpoint_t ??
+    _id
+    vox_touchpoint_t._id as touchpoint_id
+    connection_name
+    connection_id
+    connection_ip
+    connection_mac
+    touchpoint_activated
+    ...
+
+vox_user_t
+    _id
+    ...
+
+vox_user_auth_t                         <- used for logging into voxidem website
+    _id
+    ...
+
+vox_user_session_t                      <- used for maintaining voxidem website sessions
+    _id
+    ...
+
+vox_customer_access_xref_t     <- used for maintaining access between users and customer touch points
+    _id
+    touchpoint_t._id
+    user_t._id
+    access_name
+    access_token
+    access_type
+    access_internal_id                  <- internal session id used for tracking internal access
+    access_external_id                  <- external session id used for tracking external access
+    ...
+
+vox_device_t
+    _id
+    device_id
+    device_expire_datetime
+    device_ipaddress
+    device_user_agent
+    device_fingerprint
+    device_info
+    ...
+
+vox_device_user_xref_t
+    _id
+    vox_user_t._id as user_id
+    vox_device_t._id as device_id
+    device_nickname
+    ...
+
+vox_intents_t                           <- active intents only, timed out and completed intents will not live long in here
+    _id
+    intent_id
+    intent_type
+    intent_status
+    intent_data
+    intent_attempts
+    intent_final_result
+    intent_expire_time
+    device_ipaddress
+    device_user_agent
+    device_fingerprint
+    vox_touchpoint_t._id as touchpoint_id
+    vox_device_t._id as device_id
+    vox_customer_access_xref_t._id as customer_access_id
+    ...

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomFloatingActionButton">
+        <attr name="drawable" format="integer"/>
+        <attr name="color" format="color"/>
+        <attr name="shadowRadius" format="float"/>
+        <attr name="shadowDx" format="float"/>
+        <attr name="shadowDy" format="float"/>
+        <attr name="shadowColor" format="integer"/>
+        <attr name="textColor" format="color"></attr>
+        <attr name="tintColor" format="color"></attr>
+        <attr name="gradientColor" format="color"></attr>
+        <attr name="navItemColor" format="color"></attr>
+        <attr name="failureColor" format="color"></attr>
+        <attr name="buttonBorder" format="color"></attr>
+        <attr name="buttonText" format="color"></attr>
+        <attr name="faqImageColor" format="color"></attr>
+    </declare-styleable>
+
+</resources>

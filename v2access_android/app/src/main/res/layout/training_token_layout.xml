@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/gradientColor"
+    android:animateLayoutChanges="true"
+    tools:context="com.validvoice.voxidem.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="?attr/gradientColor"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/CardSectionHeader"
+            android:layout_height="75dp"
+            android:text="@string/scene_user_enroll"
+            android:textColor="?attr/textColor"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:textAppearance="?android:attr/textAppearanceMedium" />
+
+        <View style="@style/CardSectionDivider" />
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/scene_user_reenroll_token"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center_vertical"
+            android:textColorHint="?attr/textColor"
+            android:hint="@string/scene_token_enroll">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/scene_user_enroll_token"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:autofillHints="scene_token_enroll"
+                android:textColorHint="?attr/textColor"
+                android:textColor="?attr/textColor"
+                android:inputType="number" />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:id="@+id/start_enroll_process"
+            style="@style/SettingsButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Continue"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

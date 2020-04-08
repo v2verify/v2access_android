@@ -1,0 +1,58 @@
+<resources>
+
+    <style name="SelectableItemTheme">
+        <item name="android:colorControlHighlight">@color/colorAccent</item>
+    </style>
+
+    <style name="SelectableItemNoticedStyle">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">@drawable/card_section_noticed_button</item>
+    </style>
+
+    <style name="SelectableItemFlaredStyle">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">@drawable/card_section_flared_button</item>
+    </style>
+
+    <style name="SelectableItemRoundedStyle">
+        <item name="android:theme">@style/SelectableItemTheme</item>
+        <item name="android:background">@drawable/card_section_rounded_button</item>
+    </style>
+
+    <style name="CardSectionNoticedButton" parent="SelectableItemNoticedStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="CardSectionFlaredButton" parent="SelectableItemFlaredStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="CardSectionRoundedButton" parent="SelectableItemRoundedStyle">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <item name="android:paddingLeft">10dp</item>
+        <item name="android:paddingRight">10dp</item>
+        <item name="android:textColor">@color/colorText</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textAppearance">?android:attr/textAppearance</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>

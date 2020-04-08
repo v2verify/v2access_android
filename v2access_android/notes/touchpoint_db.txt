@@ -1,0 +1,205 @@
+
+vox_audit_log_t
+    _id
+    audit_type
+    audit_batch_id
+    audit_table
+    audit_id
+    audit_action
+    audit_notes
+    audit_datetime
+    audit_username
+
+vox_audit_log_detail_t
+    _id
+    vox_audit_log_t._id
+    audit_field_name
+    audit_old_value
+    audit_new_value
+
+vox_customer_t
+    _id,                                <- primary key
+    
+    // customer info fields
+    customer_name,
+    customer_industry,
+    customer_logo,
+    customer_phone,
+    customer_email,
+    customer_address_1,
+    customer_address_2,
+    customer_city,
+    customer_state,
+    customer_zip,
+    customer_country,
+    customer_ip_location,
+    customer_key,                       <- customer access key (not sure if this is needed, now that we have touch point keys)
+    ...
+    
+    // customer configurable account fields
+    max_login_attempts,                 <- amount of times the user can attempt to login before the session is stopped -or- the account is locked
+    expire_use_time,                    <- time before an unused intent expires
+    expire_process_time,                <- time before an activated intent expires
+    enforce_account_locks,              <- enforces whether an account is locked after the maximum attempts is reached
+    ...
+    
+    // meta fields (used to allow time stamp references of activity in filters or search queries)
+    last_created datetime not null default(datetime()),
+    last_changed datetime not null default(datetime())
+        create trigger vox_customer_update_last_changed_t 
+        on vox_customer_t
+        after update as
+            update vox_customer_t
+            set last_changed = getdate()
+            where _id in (select _id from inserted)
+    ...
+
+vox_touchpoint_t
+    _id                                 <- primary key
+    vox_customer_id,                    <- fk<vox_customer_t._id>
+    
+    // touch point info fields
+    touchpoint_name                     <- reference name of the touch point
+    touchpoint_type                     <- website | hardware | ivr
+    touchpoint_address                  <- website uri, hardware ip address, ivr ip address, etc
+    touchpoint_key                      <- key that is used to identify the touch point source, interaction_source
+    ...
+    
+    // touch point connection fields
+    connection_name                     <- connected touch point connection name        (this field is null when the touch point is not connected)
+    connection_id                       <- connected touch point connection id          (this field is null when the touch point is not connected)
+    connection_ip                       <- connected touch point ip address             (this field is null when the touch point is not connected)
+    connection_mac                      <- connected touch point mac address            (this field is null when the touch point is not connected)
+    connection_activated                <- touch point is currently in a signaled state (this field is null when the touch point is not connected)
+    ...
+    
+    // meta fields (used to allow time stamp references of activity in filters or search queries)
+    last_created datetime not null default(datetime()),
+    last_changed datetime not null default(datetime())
+        create trigger vox_touchpoint_update_last_changed_t 
+        on vox_touchpoint_t
+        after update as
+            update vox_touchpoint_t
+            set last_changed = getdate()
+            where _id in (select _id from inserted)
+    ...
+
+vox_user_t                              <- used for maintaining voxidem users
+    _id,                                <- primary key
+    ...
+
+vox_user_auth_t                         <- used for logging into voxidem website
+    _id,                                <- primary key
+    ...
+
+vox_user_session_t                      <- used for maintaining voxidem website sessions
+    _id,                                <- primary key
+    ...
+
+vox_security_questions_t                <- used for maintaining a list of security questions
+    _id,
+    ...
+
+vox_customer_access_xref_t              <- used for maintaining access between users and customer touch points
+    _id,                                <- primary key
+    touchpoint_id,                      <- fk<touchpoint_t._id>
+    user_id,                            <- fk<user_t._id>
+    ...
+    
+    //
+    access_name,                        <- name of access into the customers system (user name, door name, ivr name, etc)
+    access_token,                       <- access token used to authenticate access to customers system
+    access_type,                        <- access type (need to further clarify this, now that touch point types are not an access type)
+    access_invoked,                     <- is the user currently accessing this touch point
+    access_internal_id,                 <- internal session id used for tracking internal access (not sure what this is for again)
+    access_external_id,                 <- external session id used for tracking external access (not sure what this is for again)
+    ...
+
+    // meta fields (used to allow time stamp references of activity in filters or search queries)
+    last_created datetime not null default(getdate()),
+    last_changed datetime not null default(getdate())
+        create trigger vox_customer_access_xref_update_last_changed_t 
+        on vox_customer_access_xref_t
+        after update as
+            update vox_customer_access_xref_t
+            set last_changed = getdate()
+            where _id in (select _id from inserted)
+    ...
+
+vox_device_t
+    _id,                                <- primary key
+    
+    // device info fields
+    device_key,                         <-
+    device_expire_datetime,             <-
+    device_ip_address,                  <-
+    device_user_agent,                  <-
+    device_fingerprint,                 <-
+    device_info,                        <-
+    ...
+
+    // meta fields (used to allow time stamp references of activity in filters or search queries)
+    last_created datetime not null default(getdate()),
+    last_changed datetime not null default(getdate())
+        create trigger vox_device_access_xref_update_last_changed_t 
+        on vox_device_t
+        after update as
+            update vox_device_t
+            set last_changed = getdate()
+            where _id in (select _id from inserted)
+    ...
+
+vox_device_user_xref_t
+    _id,
+    
+    // user device info fields
+    user_id,                            <- fk<vox_user_t._id>
+    device_id,                          <- fk<vox_device_t._id>
+    device_nickname,                    <- user defined nickname of the identified device
+    ...
+
+    // meta fields (used to allow time stamp references of activity in filters or search queries)
+    last_created datetime not null default(getdate()),
+    last_changed datetime not null default(getdate())
+        create trigger vox_device_user_xref_access_xref_update_last_changed_t 
+        on vox_device_user_xref_t
+        after update as
+            update vox_device_user_xref_t
+            set last_changed = getdate()
+            where _id in (select _id from inserted)
+    ...
+
+vox_intents_t                           <- active intents only, timed out and completed intents will not live long in here
+    _id,                                <- primary key
+    
+    // 
+    intent_id,
+    intent_type,
+    intent_status,
+    intent_data,
+    intent_attempts,
+    intent_final_result,
+    intent_expire_time,
+    
+    //
+    device_ip_address,
+    device_user_agent,
+    device_fingerprint,
+    ...
+    
+    //
+    device_id,                          <- fk<vox_device_t._id>
+    touchpoint_id,                      <- fk<vox_touchpoint_t._id>
+    customer_access_id,                 <- fk<vox_customer_access_xref_t._id>
+    ...
+
+    // meta fields (used to allow time stamp references of activity in filters or search queries)
+    last_created datetime not null default(getdate()),
+    last_changed datetime not null default(getdate())
+        create trigger vox_intents_user_xref_access_xref_update_last_changed_t 
+        on vox_intents_t
+        after update as
+            update vox_intents_t
+            set last_changed = getdate()
+            where _id in (select _id from inserted)
+    ...

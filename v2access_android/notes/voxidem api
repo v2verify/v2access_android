@@ -1,0 +1,105 @@
+
+Voxidem Customer API
+====================
+
+3 Options
+---------
+
+Polling, Subscription, Persistence
+-------------------------------------
+
+====================
+Polling
+====================
+
+-- A Customers backend system will make a connection to our polling API and transmit any inbound requests
+-- and we will respond with any completed outbound responses
+
+    /1/cloud/voxidem/{customer_key}/poll
+
+Requests
+--------
+
+    {
+        "requests": {
+            -- post an intent to the intents table
+            { "type": "post", "intent_id":"", ... intent data ... },
+
+            -- check the status of an intent
+            { "type": "status", "intent_id":"", ... status data ... },
+
+            -- inform us that a user signed out. send the users voxidem session_id
+            { "type": "sign_out", "session_id": "", ... },
+            
+            ...
+        }
+    }
+
+Responses
+---------
+
+    {
+        "responses": {
+            -- return an error message
+            { "type": "error", "message": "" },
+
+            -- return a signed in status. informing the customer of the username and user token
+            -- as well as our internal voxidem session_id, used for user tracking
+            { "type": "sign_in", "intent_id":"", "username": "", "token": "", "session_id": "", ... },
+
+            -- return a signed out status. the user signed out of the endpoint via the app
+            { "type": "sign_out", "session_id": "", ... },
+
+            -- return a status message for a given intent
+            { "type": "status", "intent_id":"", ... }
+        }
+    }
+
+====================
+Subscription
+====================
+
+Requests
+--------
+
+-- Subscribe to events with a given callback url
+
+    /1/cloud/voxidem/{customer_key}/subscribe
+
+    {
+        -- a callback url that we transmit responses to
+        "callback_url": "",
+
+        -- some token the customer generates as a pseudo pass code for the unsubscribe call
+        "secret": "",
+        
+        ...
+    }
+
+-- Unsubscribe from events
+    
+    /1/cloud/voxidem/{customer_key}/unsubscribe
+
+    {
+        "secret": ""
+    }
+
+-- Inform voxidem of intents or status changes. i.e. sign outs, etc
+
+/1/cloud/voxidem/{customer_key}/inform
+
+{
+}
+
+Responses
+---------
+
+{ "type":"sign_in", ... }
+{ "type":"sign_out", ... }
+{ "type":"status", ... }
+
+====================
+Persistence
+====================
+
+uses a 4 byte header followed by json data with similar messages as defined above

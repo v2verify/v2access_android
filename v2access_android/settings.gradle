@@ -1,0 +1,1 @@
+include ':app', ':dynamic.scene', ':dynamic.db', ':dynamic.cloud', ':dynamic.speech', ':steelkiwi.library'

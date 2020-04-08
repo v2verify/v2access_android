@@ -1,0 +1,94 @@
+apply plugin: 'com.android.application'
+
+def appVersionString = 'V2access Version 6.0'
+
+android {
+
+    compileSdkVersion 28
+    buildToolsVersion '28.0.3'
+
+    dexOptions {
+        javaMaxHeapSize "2048M"
+    }
+
+    defaultConfig {
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 104043
+        vectorDrawables.useSupportLibrary = true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    flavorDimensions "basic"
+
+    productFlavors {
+        prod {
+            applicationId "com.validvoice.voxidem"
+            versionName "${appVersionString}"
+            resValue "string", "content_provider", "com.validvoice.voxidem.db.provider"
+        }
+        demo {
+            applicationId "com.validvoice.voxidem.demo"
+            versionName "${appVersionString}"
+            resValue "string", "content_provider", "com.validvoice.voxidem.demo.db.provider"
+        }
+        demo_test {
+            applicationId "com.validvoice.voxidem.demo_test"
+            versionName "${appVersionString}-voxidem.demo_test"
+            resValue "string", "content_provider", "com.validvoice.voxidem.demo_test.db.provider"
+        }
+        ios_demo {
+            applicationId "com.validvoice.voxidem.ios_demo"
+            versionName "${appVersionString}-voxidem.ios_demo"
+            resValue "string", "content_provider", "com.validvoice.voxidem.ios_demo.db.provider"
+        }
+        dev {
+            applicationId "com.validvoice.voxidem.dev"
+            versionName "${appVersionString}-voxidem.dev"
+            resValue "string", "content_provider", "com.validvoice.voxidem.dev.db.provider"
+        }
+        local {
+            applicationId "com.validvoice.voxidem.local"
+            versionName "${appVersionString}-voxidem.local"
+            resValue "string", "content_provider", "com.validvoice.voxidem.local.db.provider"
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation ('com.weiwangcn.betterspinner:library-material:1.1.0') {
+        exclude group: 'com.android.support', module: 'appcompat-v7'
+    }
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    implementation('com.google.android.gms:play-services-gcm:10.2.1') {
+        exclude group: 'com.google.firebase', module: 'firebase-common'
+    }
+    implementation('com.google.android.gms:play-services-vision:10.2.1') {
+        exclude group: 'com.google.firebase', module: 'firebase-common'
+    }
+    implementation 'javax.annotation:javax.annotation-api:1.2'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+    implementation 'com.github.lzyzsd:CircleProgress:v1.2.0'
+    implementation 'com.sothree.slidinguppanel:library:3.3.1'
+    implementation 'com.google.guava:guava:24.1.1-android'
+    implementation 'com.google.code.gson:gson:2.8.5'
+    implementation project(':dynamic.scene')
+    implementation project(':dynamic.speech')
+    implementation project(':dynamic.cloud')
+    implementation project(':dynamic.db')
+    implementation project(':steelkiwi.library')
+    implementation 'com.github.bumptech.glide:glide:4.9.0'
+    implementation 'com.makeramen:roundedimageview:2.3.0'
+    implementation 'com.github.jrvansuita:CheckNewAppVersionAvailable:v1.0.0'
+
+}

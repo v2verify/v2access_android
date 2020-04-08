@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- AWS Developer Key -->
+    <string name="sve_dev_key">4129D2FA-EB7E-3815-1D39-6342265E9777</string>
+
+    <!-- AWS Voxidem (Internal) Development Application Key -->
+    <string name="sve_app_key">FD81EBE9-0B1E-79CC-7FE5-A8B68B8A10EA</string>
+
+    <!-- Local Connection String -->
+    <string name="sve_server">https://v2mobile.v2ondemandapis.com</string>
+
+</resources>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_marginEnd="@dimen/margin_40"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_marginStart="@dimen/margin_40"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/logo_description"
+        android:src="@drawable/logo"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        style="@style/LoginButton"
+        android:id="@+id/user_setup_new_user_button"
+        android:layout_width="0dp"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginBottom="8dp"
+        android:text="@string/scene_user_setup_new_user"
+        app:layout_constraintBottom_toTopOf="@+id/user_setup_continue_user_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        />
+
+    <Button
+        style="@style/LoginButton"
+        android:id="@+id/user_setup_continue_user_button"
+        android:layout_width="0dp"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginBottom="8dp"
+        android:text="@string/scene_user_setup_continue_user"
+        app:layout_constraintBottom_toTopOf="@+id/scene_user_setup_existing_user_button"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:visibility="gone"
+        />
+
+    <Button
+        style="@style/LoginButton"
+        android:id="@+id/scene_user_setup_existing_user_button"
+        android:layout_width="0dp"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginBottom="16dp"
+        android:text="@string/scene_user_setup_existing_user"
+        app:layout_constraintBottom_toTopOf="@+id/scene_login_label_powered_by_vv"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+    <ImageView
+        android:id="@+id/scene_login_label_powered_by_vv"
+        android:layout_width="200dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="@dimen/margin_40"
+        android:layout_marginLeft="@dimen/margin_40"
+        android:layout_marginRight="@dimen/margin_40"
+        android:layout_marginStart="@dimen/margin_40"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="32dp"
+        android:contentDescription="@string/powered_by_validvoice"
+        android:src="@drawable/powered_by_validvoice"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
+
+</android.support.constraint.ConstraintLayout>
+
+    <!--
+    <?xml version="1.0" encoding="utf-8"?>
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_user_setup"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context="com.validvoice.voxidem.MainActivity">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1.25"
+            android:padding="35dp"
+            android:contentDescription="@string/scene_user_setup_content_description"
+            app:srcCompat="@drawable/logo_icon"
+            android:id="@+id/imageView2" />
+
+        <TextView
+            style="@style/Base.TextAppearance.AppCompat.Display1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/colorPrimary"
+            android:text="@string/scene_user_setup_display"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:orientation="vertical"
+            android:gravity="bottom">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                />
+
+            <Button
+                android:id="@+id/user_setup_new_user_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorAccent"
+                android:text="@string/scene_user_setup_new_user"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                />
+
+            <View
+                android:id="@+id/user_setup_continue_user_bar"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                android:visibility="gone"
+                />
+
+            <Button
+                android:id="@+id/user_setup_continue_user_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorAccent"
+                android:text="@string/scene_user_setup_continue_user"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                android:visibility="gone"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                />
+
+            <Button
+                android:id="@+id/scene_user_setup_existing_user_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorAccent"
+                android:text="@string/scene_user_setup_existing_user"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorPrimary"
+                />
+
+            <Button
+                android:id="@+id/user_setup_capture_code_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:background="@color/colorAccent"
+                android:text="@string/scene_user_setup_capture_code"
+                android:textColor="@color/colorText"
+                android:textSize="20sp"
+                android:paddingLeft="@dimen/activity_horizontal_margin"
+                android:paddingRight="@dimen/activity_horizontal_margin"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+    -->
